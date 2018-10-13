@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Combinatorics {
+
+    //Permutation-----------------//
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();
         // Arrays.sort(nums); // not necessary
@@ -24,21 +26,24 @@ public class Combinatorics {
         }
     }
 
+    //PutBall-----------------//
     public List<List<Integer>> putBall(int ballNumber, int boxNumber) {
-        List<List<Integer>> list = new ArrayList<>();
-        int[] result = new int[boxNumber];
-        put(result, 0, ballNumber, list);
-        return list;
+        List<List<Integer>> result = new ArrayList<>();
+        int[] inputBox = new int[boxNumber];
+        put(inputBox, 0, ballNumber, result);
+        return result;
     }
 
     private void put(int[] temp, int index, int total, List<List<Integer>> result) {
-        if (total == 0 || index == 3) {
-            temp[3] = total;
+        int len = temp.length;
+        if (total == 0 || index == len - 1) {
+            temp[len-1] = total;
             result.add(convertArrayToList(temp));
         } else {
             for (int i = 0; i <= total;i++) {
                 temp[index] = i;
                 put(temp, index +1,total -i, result);
+                temp[index+1] = 0;
             }
         }
     }
@@ -50,5 +55,4 @@ public class Combinatorics {
         }
         return item;
     }
-
 }
