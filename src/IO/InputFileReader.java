@@ -25,7 +25,7 @@ public class InputFileReader {
                 lines.add(line);
             }
         } catch (Exception e) {
-            System.out.println("Can't Find file: " + inputFileName);
+            System.out.println("InputFileReader: Can't Find file: " + inputFileName);
         }
 
         return lines;

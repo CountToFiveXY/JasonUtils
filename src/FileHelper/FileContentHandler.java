@@ -10,6 +10,8 @@ public class FileContentHandler {
 
     List<String> file;
 
+    public FileContentHandler() { }
+
     public FileContentHandler(String inputFileName) {
         file = InputFileReader.readFileToList(inputFileName);
     }

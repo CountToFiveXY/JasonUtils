@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class FileDiffHandler {
 
-    List<List<String>> files = new ArrayList<>();
+    private List<List<String>> files = new ArrayList<>();
 
     public FileDiffHandler(List<String> inputFileNames) {
         for (String fileName : inputFileNames) {
@@ -19,17 +19,21 @@ public class FileDiffHandler {
     public void filterTwoFiles(String outputFileName) {
         List<String> keySet = files.get(1)
                 .stream()
-                .map(this::getKeyFromLine)
+                .map(this::getKeyFromIndexFile)
                 .collect(Collectors.toList());
 
-        List<String> filtererFile = files.get(0)
+        List<String> filteredFile = files.get(0)
                 .stream()
-                .filter(line -> keySet.contains(getKeyFromLine(line)))
+                .filter(line -> keySet.contains(getKeyFromOriginalFile(line)))
                 .collect(Collectors.toList());
-        FilePrinter.writeToFile(filtererFile, outputFileName);
+        FilePrinter.writeToFile(filteredFile, outputFileName);
     }
 
-    private String getKeyFromLine(String line) {
+    private String getKeyFromIndexFile(String line) {
         return line;
+    }
+
+    private String getKeyFromOriginalFile(String line) {
+        return line.split(",")[1];
     }
 }
