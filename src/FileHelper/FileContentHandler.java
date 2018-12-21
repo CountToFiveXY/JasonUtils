@@ -16,10 +16,6 @@ public class FileContentHandler {
         file = InputFileReader.readFileToList(inputFileName);
     }
 
-    public int getLineNumber() {
-        return file.size();
-    }
-
     public void handleFile(String outputFileName) {
         List<String> modifiedList = file.stream()
                 .map(this::modifyEachContent)
@@ -28,6 +24,6 @@ public class FileContentHandler {
     }
 
     private String modifyEachContent(String line) {
-        return line + "," + line;
+        return FunctionHelper.getSubStringAfterIndex(line,"3");
     }
 }

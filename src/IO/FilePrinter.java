@@ -3,6 +3,7 @@ package IO;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 
 public class FilePrinter {
@@ -14,15 +15,17 @@ public class FilePrinter {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
 
-            writeNewLine(writer, SEPARATOR);
+            for (Iterator<String> iterator = text.iterator(); iterator.hasNext();) {
+                String line = iterator.next();
 
-            for (String line : text) {
-                writeNewLine(writer, line);
+                if (!iterator.hasNext())
+                    writer.write(line);
+                else
+                    writeNewLine(writer, line);
             }
-
             writer.close();
         } catch (IOException e) {
-            System.out.println("Error Printing");
+            System.out.println("Error Printing File");
         }
     }
 
