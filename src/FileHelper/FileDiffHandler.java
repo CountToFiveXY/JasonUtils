@@ -34,6 +34,6 @@ public class FileDiffHandler {
     }
 
     private String getKeyFromOriginalFile(String line) {
-        return line.split(",")[1];
+        return line.split(",")[0];
     }
 }

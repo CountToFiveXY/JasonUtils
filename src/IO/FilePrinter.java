@@ -1,6 +1,7 @@
 package IO;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Iterator;
@@ -9,19 +10,27 @@ import java.util.List;
 public class FilePrinter {
 
     private static final String NEW_LINE = System.getProperty("line.separator");
-    private static final String SEPARATOR = "=============";
+    private static final String SEPARATOR = "===========";
+    private static BufferedWriter writer;
 
     public static void writeToFile(List<String> text, String fileName) {
         try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true));
+            boolean isExisted = new File(fileName).exists();
+            writer = new BufferedWriter(new FileWriter(fileName, true));
+
+            if (isExisted) {
+                writer.write(NEW_LINE );
+                writeNewLine(SEPARATOR);
+            }
+
 
             for (Iterator<String> iterator = text.iterator(); iterator.hasNext();) {
                 String line = iterator.next();
 
-                if (!iterator.hasNext())
-                    writer.write(line);
+                if (iterator.hasNext())
+                    writeNewLine(line);
                 else
-                    writeNewLine(writer, line);
+                    writer.write(line);
             }
             writer.close();
         } catch (IOException e) {
@@ -29,7 +38,7 @@ public class FilePrinter {
         }
     }
 
-    private static void writeNewLine(BufferedWriter writer, String line) {
+    private static void writeNewLine(String line) {
         try {
             writer.write(line + NEW_LINE);
         } catch (IOException e) {
