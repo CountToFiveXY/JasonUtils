@@ -2,6 +2,7 @@ package FileHelper;
 
 public class FunctionHelper {
     private static final String COMMA = ",";
+    private static final String GUITAR_PREFIX = "https://tarviewer-integ.aka.amazon.com/search/ACBShipmentId/";
 
     public static String duplicate(String line) {
         return line + COMMA + line;
@@ -27,7 +28,11 @@ public class FunctionHelper {
         return line.replace(old, candidate);
     }
 
-    public static String to(String line, String old, String candidate) {
-        return line.replace(old, candidate);
+    public static String getGUITARLink(String line) {
+        return addPrefix(line, GUITAR_PREFIX) + "/EUECP";
+    }
+
+    public static String getSubStringBetween(String line, String firstIndex, String secondIndex) {
+        return line.substring(line.lastIndexOf(firstIndex) + firstIndex.length() +3 , line.lastIndexOf(secondIndex)-3);
     }
 }
