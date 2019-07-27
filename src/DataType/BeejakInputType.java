@@ -5,8 +5,9 @@ public enum BeejakInputType {
     mockTenant,
     mockConfigId,
     mockGroupId,
-    mockGroupIdDomain,
+    mockGroupDomain,
     mockTransactionId,
-    mockTransactionIdDomain,
+    mockTransactionDomain,
+    mockDocument,
     Rufus;
 }

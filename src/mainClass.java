@@ -48,7 +48,8 @@ public class mainClass {
 //        combinatorics.putBall(5,5).forEach(System.out::println);
 
         //-----------------//
-        beejakInputGenerator = new BeejakInputGenerator();
+        boolean isForward = true;
+        beejakInputGenerator = new BeejakInputGenerator(isForward);
         beejakInputGenerator.write(BEEJAK_OUTPUT_FILE_PATH);
     }
 }

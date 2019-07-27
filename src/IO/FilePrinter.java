@@ -10,7 +10,7 @@ import java.util.List;
 public class FilePrinter {
 
     private static final String NEW_LINE = System.getProperty("line.separator");
-    private static final String SEPARATOR = "===========";
+    private static final String SEPARATOR = "===================================================";
     private static BufferedWriter writer;
 
     public static void writeToFile(List<String> text, String fileName) {

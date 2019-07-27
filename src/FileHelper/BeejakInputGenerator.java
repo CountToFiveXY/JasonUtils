@@ -19,16 +19,14 @@ public class BeejakInputGenerator {
 
     private final String GROUP_ID = "1eb5da59-73e4-2af8-e359-4781148d935d";
     private final String GROUP_ID_DOMAIN = "DigitalTransactionId";
-    private final String TRANSACTION_ID = "1eb5da59-73e4-2af8-e359-4781148d935d";
+    private final String TRANSACTION_ID = "888888888";
     private final String TRANSACTION_ID_DOMAIN = "CROW";
 
-
-    private final boolean isForward = true;
     Map<String, String> map = new HashMap<>();
 
     List<String> file;
 
-    public BeejakInputGenerator() {
+    public BeejakInputGenerator(boolean isForward) {
         buildInputMap(isForward);
         file = InputFileReader.readFileToList("testFile/input/BeejakInputTemplate");
     }
@@ -55,14 +53,16 @@ public class BeejakInputGenerator {
         map.put(BeejakInputType.mockConfigId.toString(), ASSEMBLER_ID);
         map.put(BeejakInputType.Rufus.toString(), CONTEXT);
         map.put(BeejakInputType.mockGroupId.toString(), GROUP_ID);
-        map.put(BeejakInputType.mockGroupIdDomain.toString(), GROUP_ID_DOMAIN);
+        map.put(BeejakInputType.mockGroupDomain.toString(), GROUP_ID_DOMAIN);
 
         if (isForward) {
             map.put(BeejakInputType.mockTransactionId.toString(), GROUP_ID);
-            map.put(BeejakInputType.mockTransactionIdDomain.toString(), GROUP_ID_DOMAIN);
+            map.put(BeejakInputType.mockTransactionDomain.toString(), GROUP_ID_DOMAIN);
+            map.put(BeejakInputType.mockDocument.toString(), "Invoice");
         } else {
             map.put(BeejakInputType.mockTransactionId.toString(), TRANSACTION_ID);
-            map.put(BeejakInputType.mockTransactionIdDomain.toString(), TRANSACTION_ID_DOMAIN);
+            map.put(BeejakInputType.mockTransactionDomain.toString(), TRANSACTION_ID_DOMAIN);
+            map.put(BeejakInputType.mockDocument.toString(), "CreditNote");
         }
     }
 }

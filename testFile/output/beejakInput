@@ -1,34 +1,4 @@
 {
-    "Operation": "com.amazon.beejak#Ge",
-    "Service": "com.amazon.beejak#BeejakService",
-    "Input": {
-        "invoiceTransactionData": {
-            "tenantId": "Digital_Forward",
-            "transactionId": {
-                "id": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "domain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain"
-            },
-            "invoiceDate": 1560557432,
-            "transactionAttributes": {
-                "assemblerConfigId": "Digital_Forward_Unify",
-                "GuitarGroupIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
-				"GuitarGroupId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "groupIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
-                "groupId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "GuitarTransactionIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
-				"GuitarTransactionId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "transactionId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "transactionIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain"
-            },
-            "documentType": "Invoice",
-            "context": "tide"
-        }
-    }
-}
-===========
-
-===========
-{
     "Operation": "com.amazon.beejak#GenerateInvoice",
     "Service": "com.amazon.beejak#BeejakService",
     "Input": {
@@ -36,19 +6,19 @@
             "tenantId": "Digital_Forward",
             "transactionId": {
                 "id": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "domain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain"
+                "domain": "DigitalTransactionId"
             },
             "invoiceDate": 1560557432,
             "transactionAttributes": {
                 "assemblerConfigId": "Digital_Forward_Unify",
-                "GuitarGroupIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
+                "GuitarGroupIdDomain": "DigitalTransactionId",
 				"GuitarGroupId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "groupIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
+                "groupIdDomain": "DigitalTransactionId",
                 "groupId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "GuitarTransactionIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain",
+                "GuitarTransactionIdDomain": "DigitalTransactionId",
 				"GuitarTransactionId": "1eb5da59-73e4-2af8-e359-4781148d935d",
                 "transactionId": "1eb5da59-73e4-2af8-e359-4781148d935d",
-                "transactionIdDomain": "1eb5da59-73e4-2af8-e359-4781148d935dDomain"
+                "transactionIdDomain": "DigitalTransactionId"
             },
             "documentType": "Invoice",
             "context": "tide"
