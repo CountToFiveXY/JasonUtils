@@ -1,0 +1,27 @@
+{
+    "Operation": "com.amazon.beejak#BeejakOperation",
+    "Service": "com.amazon.beejak#BeejakService",
+    "Input": {
+        "invoiceTransactionData": {
+            "tenantId": "mockTenant",
+            "transactionId": {
+                "id": "mockTransactionId",
+                "domain": "mockTransactionIdDomain"
+            },
+            "invoiceDate": 1560557432,
+            "transactionAttributes": {
+                "assemblerConfigId": "mockConfigId",
+                "GuitarGroupIdDomain": "mockGroupIdDomain",
+				"GuitarGroupId": "mockGroupId",
+                "groupIdDomain": "mockGroupIdDomain",
+                "groupId": "mockGroupId",
+                "GuitarTransactionIdDomain": "mockTransactionIdDomain",
+				"GuitarTransactionId": "mockTransactionId",
+                "transactionId": "mockTransactionId",
+                "transactionIdDomain": "mockTransactionIdDomain"
+            },
+            "documentType": "Invoice",
+            "context": "tide"
+        }
+    }
+}
