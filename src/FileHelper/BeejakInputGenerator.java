@@ -13,12 +13,12 @@ public class BeejakInputGenerator {
     private final String GENERATE = "GenerateInvoice";
     private final String REGENERATE = "RegenerateInvoice";
     private final String CANCEL = "CancelInvoices";
-    private final String TENANT_ID = "Digital_Forward";
-    private final String ASSEMBLER_ID = "Digital_Forward_Unify";
-    private final String CONTEXT = "tide";
+    private final String TENANT_ID = "EU_Retail_Forward";
+    private final String ASSEMBLER_ID = "JP_Retail_Forward";
+    private final String CONTEXT = "bayuqiao";
 
-    private final String GROUP_ID = "1eb5da59-73e4-2af8-e359-4781148d935d";
-    private final String GROUP_ID_DOMAIN = "DigitalTransactionId";
+    private final String GROUP_ID = "15380cf8-f305-40ee-b6b7-c553f0434d34";
+    private final String GROUP_ID_DOMAIN = "ACBShipmentId";
     private final String TRANSACTION_ID = "888888888";
     private final String TRANSACTION_ID_DOMAIN = "CROW";
 
@@ -57,12 +57,21 @@ public class BeejakInputGenerator {
 
         if (isForward) {
             map.put(BeejakInputType.mockTransactionId.toString(), GROUP_ID);
+            map.put(BeejakInputType.indexTransactionDomain.toString(), getIndexTransactionDomain(GROUP_ID_DOMAIN));
             map.put(BeejakInputType.mockTransactionDomain.toString(), GROUP_ID_DOMAIN);
             map.put(BeejakInputType.mockDocument.toString(), "Invoice");
         } else {
             map.put(BeejakInputType.mockTransactionId.toString(), TRANSACTION_ID);
+            map.put(BeejakInputType.indexTransactionDomain.toString(), TRANSACTION_ID_DOMAIN);
             map.put(BeejakInputType.mockTransactionDomain.toString(), TRANSACTION_ID_DOMAIN);
             map.put(BeejakInputType.mockDocument.toString(), "CreditNote");
         }
+    }
+
+    private String getIndexTransactionDomain(String groupIdDomain) {
+        if (groupIdDomain.startsWith("ACB")) {
+            return FunctionHelper.getSubStringAfterIndex(groupIdDomain, "ACB");
+        }
+        return groupIdDomain;
     }
 }

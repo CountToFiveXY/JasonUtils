@@ -6,22 +6,20 @@
             "tenantId": "mockTenant",
             "transactionId": {
                 "id": "mockTransactionId",
-                "domain": "mockTransactionDomain"
+                "domain": "indexTransactionDomain"
             },
             "invoiceDate": 1560557432,
             "transactionAttributes": {
-                "assemblerConfigId": "mockConfigId",
-                "GuitarGroupIdDomain": "mockGroupDomain",
-				"GuitarGroupId": "mockGroupId",
                 "groupIdDomain": "mockGroupDomain",
                 "groupId": "mockGroupId",
+                "GuitarGroupIdDomain": "mockGroupDomain",
+				"GuitarGroupId": "mockGroupId",
                 "GuitarTransactionIdDomain": "mockTransactionDomain",
 				"GuitarTransactionId": "mockTransactionId",
-                "transactionId": "mockTransactionId",
-                "transactionIdDomain": "mockTransactionDomain"
+				"assemblerConfigId": "mockConfigId"
             },
             "documentType": "mockDocument",
-            "context": "tide"
+            "context": "Rufus"
         }
     }
 }

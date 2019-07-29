@@ -9,5 +9,6 @@ public enum BeejakInputType {
     mockTransactionId,
     mockTransactionDomain,
     mockDocument,
+    indexTransactionDomain,
     Rufus;
 }

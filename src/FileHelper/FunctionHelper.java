@@ -21,7 +21,7 @@ public class FunctionHelper {
     }
 
     public static String getSubStringAfterIndex(String line, String index) {
-        return line.substring(line.lastIndexOf(index) + 1);
+        return line.substring(line.lastIndexOf(index) + index.length());
     }
 
     public static String replaceString(String line, String old, String candidate) {
@@ -33,6 +33,6 @@ public class FunctionHelper {
     }
 
     public static String getSubStringBetween(String line, String firstIndex, String secondIndex) {
-        return line.substring(line.lastIndexOf(firstIndex) + firstIndex.length() +3 , line.lastIndexOf(secondIndex)-3);
+        return line.substring(line.lastIndexOf(firstIndex) + firstIndex.length(), line.lastIndexOf(secondIndex));
     }
 }
