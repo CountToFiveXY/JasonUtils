@@ -10,17 +10,42 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class BeejakInputGenerator {
-    private final String GENERATE = "GenerateInvoice";
-    private final String REGENERATE = "RegenerateInvoice";
-    private final String CANCEL = "CancelInvoices";
-    private final String TENANT_ID = "EU_Retail_Forward";
-    private final String ASSEMBLER_ID = "JP_Retail_Forward";
-    private final String CONTEXT = "bayuqiao";
 
-    private final String GROUP_ID = "15380cf8-f305-40ee-b6b7-c553f0434d34";
-    private final String GROUP_ID_DOMAIN = "ACBShipmentId";
+    private enum ASSEMBLER_CONFIG_ID {
+        EU_Retail_Forward,
+        PRIMENOW_Forward,
+        JP_Retail_Forward,
+        Digital_Forward,
+        Digital_Forward_Unify
+    }
+
+    private enum TENANT {
+        EU_Retail_Forward,
+        PRIMENOW_Forward,
+        Digital_Forward
+    }
+
+    private enum DOMAIN {
+        ACBShipmentId,
+        DigitalTransactionId,
+        CROW
+    }
+
+    private enum BEEJAK_OPERATION {
+        GenerateInvoice,
+        RegenerateInvoice,
+        CancelInvoices
+    }
+
+    private final String BEEJAK_API = BEEJAK_OPERATION.GenerateInvoice.name() ;;
+    private final String TENANT_ID = TENANT.Digital_Forward.name();
+    private final String CONFIG_ID = ASSEMBLER_CONFIG_ID.Digital_Forward_Unify.name();
+
+    private final String GROUP_ID = "6ab62768-bf7e-522a-f84a-7a97f1ac1c16";
+    private final String GROUP_ID_DOMAIN = DOMAIN.DigitalTransactionId.name();
     private final String TRANSACTION_ID = "888888888";
-    private final String TRANSACTION_ID_DOMAIN = "CROW";
+    private final String TRANSACTION_ID_DOMAIN = DOMAIN.CROW.name();
+    private final String CONTEXT = "bayuqiao";
 
     Map<String, String> map = new HashMap<>();
 
@@ -48,9 +73,9 @@ public class BeejakInputGenerator {
     }
 
     private void buildInputMap(boolean isForward) {
-        map.put(BeejakInputType.BeejakOperation.toString(), GENERATE);
+        map.put(BeejakInputType.BeejakOperation.toString(), BEEJAK_API);
         map.put(BeejakInputType.mockTenant.toString(), TENANT_ID);
-        map.put(BeejakInputType.mockConfigId.toString(), ASSEMBLER_ID);
+        map.put(BeejakInputType.mockConfigId.toString(), CONFIG_ID);
         map.put(BeejakInputType.Rufus.toString(), CONTEXT);
         map.put(BeejakInputType.mockGroupId.toString(), GROUP_ID);
         map.put(BeejakInputType.mockGroupDomain.toString(), GROUP_ID_DOMAIN);
