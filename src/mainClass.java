@@ -3,6 +3,7 @@ import FileHelper.BeejakInputGenerator;
 import FileHelper.FileContentHandler;
 import FileHelper.FileDiffHandler;
 import FileHelper.FileNameHandler;
+import FileHelper.Lottery;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,6 +14,7 @@ public class mainClass {
     private static FileDiffHandler fileDiffHandler;
     private static Combinatorics combinatorics;
     private static BeejakInputGenerator beejakInputGenerator;
+    private static Lottery lottery;
 
     //folder path
     private static final String TEST_IN = "testFile/input/";
@@ -40,17 +42,19 @@ public class mainClass {
 //        fileContentHandler.handleFile(OUTPUT_FILE_PATH);
 
         //-----------------//
-       fileDiffHandler = new FileDiffHandler(INPUT_FILES_LIST);
+        fileDiffHandler = new FileDiffHandler(INPUT_FILES_LIST);
 //        fileDiffHandler.filterTwoFiles(OUTPUT_FILE_PATH);
 
         //-----------------//
         combinatorics = new Combinatorics();
 //        combinatorics.putBall(5,5).forEach(System.out::println);
 
+        lottery = new Lottery(20, 12);
+        lottery.ballot();
+
         //-----------------//
         boolean isForward = true;
-        beejakInputGenerator = new BeejakInputGenerator(isForward);
-        beejakInputGenerator.write(BEEJAK_OUTPUT_FILE_PATH);
+//        beejakInputGenerator = new BeejakInputGenerator(isForward);
     }
 }
 
