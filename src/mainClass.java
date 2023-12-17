@@ -1,4 +1,5 @@
 import Algorithm.Combinatorics;
+import Asphalt9.DriverSyndicate;
 import FileHelper.BeejakInputGenerator;
 import FileHelper.FileContentHandler;
 import FileHelper.FileDiffHandler;
@@ -15,6 +16,7 @@ public class mainClass {
     private static Combinatorics combinatorics;
     private static BeejakInputGenerator beejakInputGenerator;
     private static Lottery lottery;
+    private static DriverSyndicate syndicate;
 
     //folder path
     private static final String TEST_IN = "testFile/input/";
@@ -34,27 +36,8 @@ public class mainClass {
 
 
     public static void main(String[] args) {
-        //-----------------//
-        fileNameHandler = new FileNameHandler(TEST_IN);
-
-        //-----------------//
-        fileContentHandler = new FileContentHandler(INPUT_FILE_PATH);
-//        fileContentHandler.handleFile(OUTPUT_FILE_PATH);
-
-        //-----------------//
-        fileDiffHandler = new FileDiffHandler(INPUT_FILES_LIST);
-//        fileDiffHandler.filterTwoFiles(OUTPUT_FILE_PATH);
-
-        //-----------------//
-        combinatorics = new Combinatorics();
-//        combinatorics.putBall(5,5).forEach(System.out::println);
-
-        lottery = new Lottery(20, 12);
-        lottery.ballot();
-
-        //-----------------//
-        boolean isForward = true;
-//        beejakInputGenerator = new BeejakInputGenerator(isForward);
+        syndicate = new DriverSyndicate();
+        syndicate.getCoins();
     }
 }
 
