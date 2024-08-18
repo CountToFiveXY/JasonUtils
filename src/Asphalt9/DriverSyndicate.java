@@ -4,20 +4,20 @@ import java.util.*;
 
 public class DriverSyndicate {
 
-    int[] sp = setSpList();
-    int[] coins = setCoins();
+    int[] spList = setSpList();
+    int[] coinList = setCoins();
     int maxSP = setMaxSp();
 
     private int getMaxTries(int i) {
-        if (coins[i] == 0) {
-            return 1;
+        if (coinList[i] == 0) {
+            return 0;
         }
-        return maxSP/sp[i];
+        return maxSP/ spList[i];
     }
 
     public void getCoins() {
         HashMap<Integer, int[]> record = new HashMap<>();
-        int maxCoin = 0;
+        int maxCoinsToStop = 0;
         int totalSp;
         int coin;
         for (int a = 0; a <= getMaxTries(0); a++ ) {
@@ -29,11 +29,12 @@ public class DriverSyndicate {
                                 for (int g = 0; g <= getMaxTries(6); g++) {
                                     for (int h = 0; h <= getMaxTries(7); h++) {
                                         for (int i = 0; i <= getMaxTries(8); i++) {
-                                            totalSp = a * sp[0] + b * sp[1] + c * sp[2] + d * sp[3] + e * sp[4] + f * sp[5] + g * sp[6] + h * sp[7] + i * sp[8];
-                                            coin = a * coins[0] + b * coins[1] + c * coins[2] + d * coins[3] + e * coins[4] + f * coins[5] + g * coins[6] + h * coins[7] + i * coins[8];
-                                            if (totalSp < maxSP && coin >= maxCoin) {
-                                                maxCoin = coin;
-                                                record.put(maxCoin, new int[] {a, b, c, d, e, f, g, h, i});
+                                            totalSp = a * spList[0] + b * spList[1] + c * spList[2] + d * spList[3] + e * spList[4] + f * spList[5] + g * spList[6] + h * spList[7] + i * spList[8];
+                                            coin = a * coinList[0] + b * coinList[1] + c * coinList[2] + d * coinList[3] + e * coinList[4] + f * coinList[5] + g * coinList[6] + h * coinList[7] + i * coinList[8];
+                                            if (totalSp < maxSP && coin >= maxCoinsToStop) {
+                                                maxCoinsToStop = coin;
+                                                int[] repeatTimes = new int[] {a, b, c, d, e, f, g, h, i};
+                                                record.put(maxCoinsToStop, repeatTimes);
                                             }
                                         }
                                     }
@@ -46,32 +47,49 @@ public class DriverSyndicate {
         }
 
         int stopSp = 0;
-        for (int i = 0; i < sp.length; i++) {
-            stopSp += sp[i] * record.get(maxCoin)[i];
+        for (int i = 0; i < spList.length; i++) {
+            stopSp += spList[i] * record.get(maxCoinsToStop)[i];
         }
 
         //add max coin as last step
-        int maxCoinInList = Arrays.stream(coins).max().getAsInt();
-        int maxCoinIndexInList = Arrays.stream(coins).boxed().toList().indexOf(maxCoinInList);
-        record.get(maxCoin)[maxCoinIndexInList] += 1;
+        int maxCoinInList = Arrays.stream(coinList).max().getAsInt();
+        int maxCoinIndexInList = Arrays.stream(coinList).boxed().toList().indexOf(maxCoinInList);
+        // add 1 repeat times to the maxCoinInList for last run
+        record.get(maxCoinsToStop)[maxCoinIndexInList] += 1;
 
-        System.out.printf("max coin is %d + %d = %d, sequence %s, stop at %d%n", maxCoin, maxCoinInList, maxCoin + maxCoinInList, Arrays.toString(record.get(maxCoin)), stopSp);
+        printCoin(record.get(maxCoinsToStop));
+        System.out.printf("max coin is %d + %d = %d, sequence %s, stop at %d%n", maxCoinsToStop, maxCoinInList, maxCoinsToStop + maxCoinInList, Arrays.toString(record.get(maxCoinsToStop)), stopSp);
     }
 
     private int setMaxSp() {
-        return 30000;
+        return 33000;
     }
 
     private int[] setSpList () {
         return new int[] {
-                1959, 1260, 840, 4200, 2700, 1800, 7000, 4500, 3000
+                2700, 4050, 6300,
+                4500, 6750, 10500,
+                0, 0, 0
         };
     }
 
     private int[] setCoins () {
         //300, 240, 180, 0, 0, 0, 0, 0, 0
         return new int[] {
-                270, 216, 162, 675, 540, 405, 0, 0, 0
+                0, 800, 0,
+                2100, 3200,
+                3500, 0, 0, 0
         };
+    }
+
+    private void printCoin(int[] repeatTimes) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("SP repeat time: ");
+        for (int i = 0; i < repeatTimes.length; i++) {
+            if (repeatTimes[i] != 0) {
+                sb.append(spList[i] + " * " + repeatTimes[i] + "/" );
+            }
+        }
+        System.out.println(sb);
     }
 }
