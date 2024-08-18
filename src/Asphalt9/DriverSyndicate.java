@@ -62,23 +62,25 @@ public class DriverSyndicate {
     }
 
     private int setMaxSp() {
-        return 33000;
+        return 44000;
     }
 
     private int[] setSpList () {
         return new int[] {
+                1200, 1800, 2400,
                 2700, 4050, 6300,
                 4500, 6750, 10500,
-                0, 0, 0
         };
     }
 
     private int[] setCoins () {
-        //300, 240, 180, 0, 0, 0, 0, 0, 0
+        int c1 = 110;
+        int c2 = 275;
+
         return new int[] {
-                0, 800, 0,
-                2100, 3200,
-                3500, 0, 0, 0
+                3 * c1, 4 * c1, 5 * c1,
+                3 * c2, 4 * c2, 5 * c2,
+                30 * c1, 40 * c1, 50 * c1,
         };
     }
 
@@ -87,7 +89,7 @@ public class DriverSyndicate {
         sb.append("SP repeat time: ");
         for (int i = 0; i < repeatTimes.length; i++) {
             if (repeatTimes[i] != 0) {
-                sb.append(spList[i] + " * " + repeatTimes[i] + "/" );
+                sb.append(spList[i] + " * " + repeatTimes[i] + "| " );
             }
         }
         System.out.println(sb);
