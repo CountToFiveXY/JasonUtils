@@ -1,8 +1,8 @@
-DELAY : 3000
-Mouse : 1650 : 896 : Click : 0 : 0 : 0
+DELAY : 4000
+Mouse : 1650 : 900 : Click : 0 : 0 : 0
 DELAY : 8000
 Mouse : 1533 : 818 : Click : 0 : 0 : 0
-DELAY : 12000
+DELAY : 15000
 Mouse : 1129 : 816 : Click : 0 : 0 : 0
 DELAY : 12000
 Keyboard : D7 : KeyDown
@@ -20,8 +20,8 @@ DELAY : 3000
 Mouse : 1135 : 769 : Click : 0 : 0 : 0
 DELAY : 55000
 Mouse : 1047 : 648 : Click : 0 : 0 : 0
-DELAY : 15000
-Mouse : 1074 : 1041 : RightClick : 0 : 0 : 0
-DELAY : 2000
-Mouse : 1069 : 987 : Click : 0 : 0 : 0
-DELAY : 45000
+DELAY : 25000
+Mouse : 1080 : 1050 : RightClick : 0 : 0 : 0
+DELAY : 2500
+Mouse : 1070 : 987 : Click : 0 : 0 : 0
+DELAY : 60000
