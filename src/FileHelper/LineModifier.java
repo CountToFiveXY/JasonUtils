@@ -1,6 +1,6 @@
 package FileHelper;
 
-public class FunctionHelper {
+public class LineModifier {
     private static final String COMMA = ",";
     private static final String GUITAR_PREFIX = "https://tarviewer-integ.aka.amazon.com/search/ACBShipmentId/";
 

@@ -66,7 +66,7 @@ public class BeejakInputGenerator {
     private String replace(String line) {
         for (String key: map.keySet()) {
             if (line.contains(key)) {
-                return FunctionHelper.replaceString(line, key, map.get(key));
+                return LineModifier.replaceString(line, key, map.get(key));
             }
         }
         return line;
@@ -95,7 +95,7 @@ public class BeejakInputGenerator {
 
     private String getIndexTransactionDomain(String groupIdDomain) {
         if (groupIdDomain.startsWith("ACB")) {
-            return FunctionHelper.getSubStringAfterIndex(groupIdDomain, "ACB");
+            return LineModifier.getSubStringAfterIndex(groupIdDomain, "ACB");
         }
         return groupIdDomain;
     }

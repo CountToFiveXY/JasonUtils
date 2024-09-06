@@ -1,6 +1,7 @@
 package Asphalt9;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class DriverSyndicate {
 
@@ -58,30 +59,32 @@ public class DriverSyndicate {
         record.get(maxCoinsToStop)[maxCoinIndexInList] += 1;
 
         printCoin(record.get(maxCoinsToStop));
-        System.out.printf("max coin is %d + %d = %d, sequence %s, stop at %d%n", maxCoinsToStop, maxCoinInList, maxCoinsToStop + maxCoinInList, Arrays.toString(record.get(maxCoinsToStop)), stopSp);
-    }
-
-    private int setMaxSp() {
-        return 44000;
+        System.out.printf("max coin is %d + %d = %d, sequence %s, stop at %d/%d", maxCoinsToStop, maxCoinInList, maxCoinsToStop + maxCoinInList, Arrays.toString(record.get(maxCoinsToStop)), stopSp, maxSP);
     }
 
     private int[] setSpList () {
-        return new int[] {
-                1200, 1800, 2400,
+
+        return new int[]{
+                1200, 1800, 2800,
                 2700, 4050, 6300,
                 4500, 6750, 10500,
         };
     }
 
     private int[] setCoins () {
-        int c1 = 110;
-        int c2 = 275;
+        int c1 = 135;
+        int c2 = 337;
+        int c3 = 0;
 
         return new int[] {
                 3 * c1, 4 * c1, 5 * c1,
                 3 * c2, 4 * c2, 5 * c2,
-                30 * c1, 40 * c1, 50 * c1,
+                3 * c3, 4 * c3, 5 * c3,
         };
+    }
+
+    private int setMaxSp() {
+        return 35000;
     }
 
     private void printCoin(int[] repeatTimes) {

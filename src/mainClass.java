@@ -1,5 +1,6 @@
 import Algorithm.Combinatorics;
 import Asphalt9.DriverSyndicate;
+import Asphalt9.MacroCombiner;
 import FileHelper.BeejakInputGenerator;
 import FileHelper.FileContentHandler;
 import FileHelper.FileDiffHandler;
@@ -17,6 +18,7 @@ public class mainClass {
     private static BeejakInputGenerator beejakInputGenerator;
     private static Lottery lottery;
     private static DriverSyndicate syndicate;
+    private static MacroCombiner macroCombiner;
 
     //folder path
     private static final String TEST_IN = "testFile/input/";
@@ -34,10 +36,15 @@ public class mainClass {
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
     private static final String BEEJAK_OUTPUT_FILE_PATH = TEST_OUT + "beejakInput";
 
+    private static final String c1 = "C1";
+    private static final String c2 = "C2";
+    private static final String c3 = "C3";
+    private static final String c4 = "C4";
+    private static final String c5 = "C5";
 
     public static void main(String[] args) {
-        syndicate = new DriverSyndicate();
-        syndicate.getCoins();
+        macroCombiner = new MacroCombiner();
+        macroCombiner.combine(Arrays.asList(c1,c2,c5,c3,c4,c2,c4), Arrays.asList(11,11,1,10,11,1,5));
     }
 }
 
