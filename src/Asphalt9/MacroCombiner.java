@@ -13,6 +13,7 @@ public class MacroCombiner {
 
     private static String macroPath = "macroFiles/";
     private static String macrosuffix = ".mcr";
+    private static String windowDesktop = "/User/ybao0/OneDrive/Desktop/";
 
     public void combine(List<String> macroList, List<Integer> timesList) {
         List<String> finishedMacros = new ArrayList<>();
@@ -24,7 +25,7 @@ public class MacroCombiner {
     }
 
     public String combineRuns(List<String> macroList, List<Integer> timesList) {
-        StringJoiner sb = new StringJoiner("|");
+        StringJoiner sb = new StringJoiner("_");
         List<String> finishedMacros = new ArrayList<>();
         for (int i = 0 ; i < macroList.size() ; i++) {
             String macro = macroList.get(i);

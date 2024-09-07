@@ -18,10 +18,10 @@ DELAY : 72
 Keyboard : D3 : KeyUp
 DELAY : 3000
 Mouse : 1135 : 769 : Click : 0 : 0 : 0
-DELAY : 55000
+DELAY : 60000
 Mouse : 1047 : 648 : Click : 0 : 0 : 0
-DELAY : 25000
+DELAY : 30000
 Mouse : 1080 : 1050 : RightClick : 0 : 0 : 0
 DELAY : 2500
 Mouse : 1070 : 987 : Click : 0 : 0 : 0
-DELAY : 60000
+DELAY : 150000
