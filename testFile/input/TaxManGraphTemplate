@@ -1,0 +1,33 @@
+{{toc/}}
+
+=== STACK Metrics ===
+
+{{html wiki=true}}
+<table align="center">
+
+<tr bgcolor="#828282">
+<th align="center">Realm</th>
+<th align="center">CalculateTaxTPS</th>
+<th align="center">CalculateTax latency p50</th>
+<th align="center">CalculateTax latency p90</th>
+<th align="center">CPU</th>
+</tr>
+
+
+<tr>
+<td>MARKETPLACE</td>
+<td>
+{{igraph type="bitmap" args="graph=SchemaName1=Service&DataSet1=Test%3ASTACK&Marketplace1=MARKETPLACE&HostGroup1=ALL&Host1=ALL&ServiceName1=TaxManService-Vertex9&MethodName1=calculateTaxForCachePriming&Client1=ALL&MetricClass1=NONE&Instance1=NONE&Metric1=TimePerLineItem&Period1=OneMinute&Stat1=n&ValueUnit1=millisecond&Label1=n&GraphTitle=TaxManServiceV9%20calculateTax&DecoratePoints=true&TIMEPERIOD&FunctionExpression1=M1%2F60&FunctionLabel1=TPS%20%5Bmax%3A%20%7Bmax%7D%2C%20avg%3A%20%7Bavg%7D%5D&FunctionYAxisPreference1=left&ChartLegend=true|width=400|height=250"/}}
+</td>
+
+<td>{{igraph type="bitmap" args="graph=SchemaName1=Service&DataSet1=Test%3ASTACK&Marketplace1=MARKETPLACE&HostGroup1=ALL&Host1=ALL&ServiceName1=TaxManService-Vertex9&MethodName1=calculateTaxForCachePriming&Client1=ALL&MetricClass1=NONE&Instance1=NONE&Metric1=TimePerLineItem&Period1=OneMinute&Stat1=p50&ValueUnit1=millisecond&Label1=p50&GraphTitle=TaxManServiceV9%20p50&DecoratePoints=true&TIMEPERIOD&FunctionExpression1=M1&FunctionLabel1=P50%20%5Bmax%3A%20%7Bmax%7D%2C%20avg%3A%20%7Bavg%7D%5D&FunctionYAxisPreference1=left&ChartLegend=true|width=400|height=250"/}}
+</td>
+
+<td>{{igraph type="bitmap" args="graph=SchemaName1=Service&DataSet1=Test%3ASTACK&Marketplace1=MARKETPLACE&HostGroup1=ALL&Host1=ALL&ServiceName1=TaxManService-Vertex9&MethodName1=calculateTaxForCachePriming&Client1=ALL&MetricClass1=NONE&Instance1=NONE&Metric1=TimePerLineItem&Period1=OneMinute&Stat1=p90&ValueUnit1=millisecond&Label1=p90&GraphTitle=TaxManServiceV9%20p90&DecoratePoints=true&TIMEPERIOD&FunctionExpression1=M1&FunctionLabel1=P90%20%5Bmax%3A%20%7Bmax%7D%2C%20avg%3A%20%7Bavg%7D%5D&FunctionYAxisPreference1=left&ChartLegend=true|width=400|height=250"/}}
+</td>
+
+<td>{{igraph type="bitmap" args="graph=SchemaName1=Search&Pattern1=host%3D%24ALL%24%20metric%3D%24CapacityCPUUtilization%24%20schemaname%3DSnitch%20prod%20HOSTPREFIX&Period1=FiveMinute&Stat1=avg&GraphTitle=CPU%20Utilization&DecoratePoints=true&ShowLegendErrors=false&SplitLegend=false&HorizontalLineLeft1=%28%23color%3Dred%20@%2060%2CUnder%20scaled%20%26%20requests%20impacted%20-%20%23color%3Dred%20@%20100%29%2C%28%23color%3Dorange%20@%2050%2COperating%20at%20limits%20-%20%23color%3Dorange%20@%2060%29%2C%28%23color%3Dgreen%20@%2020%2CProperly%20scaled%20-%20%23color%3Dgreen%20@%2050%29%2C%28%23color%3Dcyan%20@%200%2COver%20scaled%20-%20%23color%3Dcyan%20@%2020%29%2C&LabelLeft=CPU%20Utilization%20%28%25%29&TIMEPERIOD&FunctionExpression1=S1&FunctionLabel1=%7BmetricLabel%7D%20%5Bmax%3A%20%7Bmax%7D%5D&FunctionYAxisPreference1=left&ChartLegend=true|width=400|height=250"/}}
+</td>
+
+</table>
+{{/html}}

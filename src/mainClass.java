@@ -1,7 +1,7 @@
 import Algorithm.Combinatorics;
 import Asphalt9.DriverSyndicate;
 import Asphalt9.MacroCombiner;
-import FileHelper.BeejakInputGenerator;
+import FileHelper.TaxManGraphGenerator;
 import FileHelper.FileContentHandler;
 import FileHelper.FileDiffHandler;
 import FileHelper.FileNameHandler;
@@ -15,7 +15,7 @@ public class mainClass {
     private static FileContentHandler fileContentHandler;
     private static FileDiffHandler fileDiffHandler;
     private static Combinatorics combinatorics;
-    private static BeejakInputGenerator beejakInputGenerator;
+    private static TaxManGraphGenerator taxManGraphGenerator;
     private static Lottery lottery;
     private static DriverSyndicate syndicate;
     private static MacroCombiner macroCombiner;
@@ -34,7 +34,6 @@ public class mainClass {
 
     //output file
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
-    private static final String BEEJAK_OUTPUT_FILE_PATH = TEST_OUT + "beejakInput";
 
     private static final String c1 = "C1";
     private static final String c2 = "C2";
