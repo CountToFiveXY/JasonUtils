@@ -13,7 +13,7 @@ public class MacroCombiner {
 
     private static String macroPath = "macroFiles/";
     private static String macrosuffix = ".mcr";
-    private static String windowDesktop = "/User/ybao0/OneDrive/Desktop/";
+    private static String windowDesktop = "/Users/ybao0/OneDrive/Desktop/";
 
     public void combine(List<String> macroList, List<Integer> timesList) {
         List<String> finishedMacros = new ArrayList<>();

@@ -34,7 +34,7 @@ public class FilePrinter {
             }
             writer.close();
         } catch (IOException e) {
-            System.out.println("Error Printing File");
+            System.out.println("Error Printing File" + e.getMessage());
         }
     }
 
