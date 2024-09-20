@@ -1,6 +1,6 @@
 DELAY : 2000
 Mouse : 1080 : 1050 : Click : 0 : 0 : 0
-DELAY : 30000
+DELAY : 60000
 Mouse : 1690 : 935 : Click : 0 : 0 : 0
 DELAY : 3200
 Mouse : 1690 : 935 : Click : 0 : 0 : 0

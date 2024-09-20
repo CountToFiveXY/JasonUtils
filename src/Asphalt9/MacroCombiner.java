@@ -21,7 +21,7 @@ public class MacroCombiner {
         finishedMacros.addAll(multiplySingleMacro("start", 1));
         finishedMacros.addAll(multiplySingleMacro(combinedRunName, 1));
         finishedMacros.addAll(multiplySingleMacro("600", 1));
-        FilePrinter.writeToFile(finishedMacros, macroPath + "output" + macrosuffix);
+        FilePrinter.writeToFile(finishedMacros, windowDesktop + "output" + macrosuffix);
     }
 
     public String combineRuns(List<String> macroList, List<Integer> timesList) {

@@ -41,9 +41,12 @@ public class mainClass {
     private static final String c4 = "C4";
     private static final String c5 = "C5";
 
+
     public static void main(String[] args) {
         macroCombiner = new MacroCombiner();
-        macroCombiner.combine(Arrays.asList(c1,c2,c5,c3,c4,c2,c4), Arrays.asList(11,11,1,10,11,1,5));
+        //macroCombiner.combineRuns(Arrays.asList(c5), Arrays.asList(5));
+        //macroCombiner.combine(Arrays.asList(c1,c3,c5,c3,c4,c2,c4), Arrays.asList(10,10,1,9,10,1,9));
+        macroCombiner.combine(Arrays.asList(c5,c3,c4,c1,c3,c1,c4), Arrays.asList(1,9,10,1,9,10,10));
     }
 }
 
