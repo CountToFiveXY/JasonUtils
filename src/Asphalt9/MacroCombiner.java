@@ -15,12 +15,14 @@ public class MacroCombiner {
     private static String macrosuffix = ".mcr";
     private static String windowDesktop = "/Users/ybao0/OneDrive/Desktop/";
 
-    public void combine(List<String> macroList, List<Integer> timesList) {
+    public void combineBank(List<String> macroList, List<Integer> timesList) {
         List<String> finishedMacros = new ArrayList<>();
         String combinedRunName = combineRuns(macroList, timesList);
         finishedMacros.addAll(multiplySingleMacro("start", 1));
+        finishedMacros.addAll(multiplySingleMacro("zl1_cpro", 1));
         finishedMacros.addAll(multiplySingleMacro(combinedRunName, 1));
         finishedMacros.addAll(multiplySingleMacro("600", 1));
+        finishedMacros.addAll(multiplySingleMacro("close", 1));
         FilePrinter.writeToFile(finishedMacros, windowDesktop + "output" + macrosuffix);
     }
 

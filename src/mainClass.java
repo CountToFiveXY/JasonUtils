@@ -35,18 +35,49 @@ public class mainClass {
     //output file
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
 
-    private static final String c1 = "C1";
-    private static final String c2 = "C2";
-    private static final String c3 = "C3";
-    private static final String c4 = "C4";
-    private static final String c5 = "C5";
 
+    private static final String a1 = "a1";
+    private static final String a2 = "a2";
+    private static final String a3 = "a3";
+    private static final String A1 = "1A";
+    private static final String A2 = "2A";
+    private static final String A3 = "3A";
+    private static final String b1 = "b1";
+    private static final String b2 = "b2";
+    private static final String b3 = "b3";
+    private static final String B1 = "1B";
+    private static final String B2 = "2B";
+    private static final String B3 = "3B";
 
+    /*
+    b1,B1,b1,B1,b1
+    B2,b2,B2,b2,B2,b2,
+    B3,b3,B3,b3,B3,
+    a1,A1,a1,A1,a1
+    a2,A2,a2,A2,
+    a3,A3,a3,A3,
+    */
     public static void main(String[] args) {
         macroCombiner = new MacroCombiner();
-        //macroCombiner.combineRuns(Arrays.asList(c5), Arrays.asList(5));
-        //macroCombiner.combine(Arrays.asList(c1,c3,c5,c3,c4,c2,c4), Arrays.asList(10,10,1,9,10,1,9));
-        macroCombiner.combine(Arrays.asList(c5,c3,c4,c1,c3,c1,c4), Arrays.asList(1,9,10,1,9,10,10));
+        macroCombiner.combineRuns(
+                Arrays.asList(
+                        //b1,B1,b1,B1,b1
+                        //B2,b2,B2,b2,B2,b2,
+                        //B3,b3,B3,
+                         //b3,B3,
+                        A1,a1,A1,a1
+                        ,A2,a2,A2,a2
+                        //a3,A3,a3,A3
+                ),
+                Arrays.asList(
+                        //1,1,1,1,1,
+                        1,1,1,1,
+                        1,1,1,1
+                        //1,1,1,1,1,
+                        //1,1,1,1,
+                        //1,1,1,1
+                )
+        );
     }
 }
 
