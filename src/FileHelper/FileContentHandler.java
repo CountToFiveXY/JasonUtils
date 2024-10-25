@@ -11,17 +11,19 @@ public class FileContentHandler {
 
     List<String> file;
 
-    public FileContentHandler() { }
+    public FileContentHandler() {
+        file = InputFileReader.readFileToList("testFile/input/test");
+    }
 
     public FileContentHandler(String inputFileName) {
         file = InputFileReader.readFileToList(inputFileName);
     }
 
-    public void handleFile(String outputFileName) {
+    public void quickHandle() {
         List<String> modifiedList = file.stream()
                 .map(this::modifyEachContent)
                 .collect(Collectors.toList());
-        FilePrinter.writeToFile(modifiedList, outputFileName);
+        FilePrinter.writeToFile(modifiedList, "testFile/output/out");
     }
 
     public List<String> multiplySingleFile(String fileName, int times) {
@@ -34,13 +36,6 @@ public class FileContentHandler {
     }
 
     private String modifyEachContent(String line) {
-        if (line.contains("LeftButtonDown")) {
-            return "";
-        }
-
-        if (line.contains("LeftButtonUp")) {
-            return line.replace("LeftButtonUp", "Click");
-        }
-        return line;
+        return String.format("https://odin.amazon.com/#remove-host-entity/materialSetsPage=0&searchInactive=true&hostEntityType=HostClass&hostEntityName=%s", line);
     }
 }

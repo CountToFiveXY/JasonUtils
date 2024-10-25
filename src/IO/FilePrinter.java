@@ -23,6 +23,28 @@ public class FilePrinter {
                 writeNewLine(SEPARATOR);
             }
 
+            for (Iterator<String> iterator = text.iterator(); iterator.hasNext();) {
+                String line = iterator.next();
+
+                if (iterator.hasNext())
+                    writeNewLine(line);
+                else
+                    writer.write(line);
+            }
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("Error Printing File" + e.getMessage());
+        }
+    }
+
+    public static void overrideFile(List<String> text, String fileName) {
+        try {
+            File file = new File(fileName);
+            boolean isExisted = file.exists();
+            if (isExisted){
+                file.delete();
+            }
+            writer = new BufferedWriter(new FileWriter(fileName, true));
 
             for (Iterator<String> iterator = text.iterator(); iterator.hasNext();) {
                 String line = iterator.next();

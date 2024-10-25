@@ -28,7 +28,7 @@ public class TaxManGraphGenerator {
         List<String> modifiedList = file.stream()
                 .map(this::replace)
                 .collect(Collectors.toList());
-        FilePrinter.writeToFile(modifiedList, "testFile/output/" + realm + "-" + stack);
+        FilePrinter.overrideFile(modifiedList, "testFile/output/" + realm + "-" + stack);
     }
 
     private String replace(String line) {
@@ -41,14 +41,15 @@ public class TaxManGraphGenerator {
     }
 
     private void buildInputMap() {
-        realm = "NAECP-AWS";
-        stack = "SPT";
-        timePeriod = "StartTime1=2024-09-10T07:39:00Z&EndTime1=2024-09-10T09:05:00Z";
-        hostPrefix = "tea-taxmanv9-awsna-spt";
+        realm = "NAECP";
+        stack = "ServiceRelease";
+        timePeriod = "?StartTime1=2024-09-24T15:00:00Z&EndTime1=2024-09-24T16:18:00Z";
+        hostPrefix = "tea-taxmanv9-sr-na-gamma";
+        //hostPrefix = "tea-taxmanv9-awsna-spt";
 
         map.put("STACK", stack);
         map.put("MARKETPLACE", realm);
-        map.put("TIMEPERIOD", timePeriod);
+        map.put("TIMEPERIOD", timePeriod.substring(1));
         map.put("HOSTPREFIX", hostPrefix);
     }
 }

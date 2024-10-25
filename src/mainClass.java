@@ -7,8 +7,13 @@ import FileHelper.FileDiffHandler;
 import FileHelper.FileNameHandler;
 import FileHelper.Lottery;
 
+import java.io.File;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class mainClass {
     private static FileNameHandler fileNameHandler;
@@ -35,49 +40,8 @@ public class mainClass {
     //output file
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
 
-
-    private static final String a1 = "a1";
-    private static final String a2 = "a2";
-    private static final String a3 = "a3";
-    private static final String A1 = "1A";
-    private static final String A2 = "2A";
-    private static final String A3 = "3A";
-    private static final String b1 = "b1";
-    private static final String b2 = "b2";
-    private static final String b3 = "b3";
-    private static final String B1 = "1B";
-    private static final String B2 = "2B";
-    private static final String B3 = "3B";
-
-    /*
-    b1,B1,b1,B1,b1
-    B2,b2,B2,b2,B2,b2,
-    B3,b3,B3,b3,B3,
-    a1,A1,a1,A1,a1
-    a2,A2,a2,A2,
-    a3,A3,a3,A3,
-    */
     public static void main(String[] args) {
         macroCombiner = new MacroCombiner();
-        macroCombiner.combineRuns(
-                Arrays.asList(
-                        //b1,B1,b1,B1,b1
-                        //B2,b2,B2,b2,B2,b2,
-                        //B3,b3,B3,
-                         //b3,B3,
-                        A1,a1,A1,a1
-                        ,A2,a2,A2,a2
-                        //a3,A3,a3,A3
-                ),
-                Arrays.asList(
-                        //1,1,1,1,1,
-                        1,1,1,1,
-                        1,1,1,1
-                        //1,1,1,1,1,
-                        //1,1,1,1,
-                        //1,1,1,1
-                )
-        );
+        macroCombiner.combineMultiplayer3();
     }
 }
-

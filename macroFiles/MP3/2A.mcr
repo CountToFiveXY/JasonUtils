@@ -1,4 +1,4 @@
-DELAY : 2618
+DELAY : 1500
 Mouse : 1686 : 912 : Click : 0 : 0 : 0
 DELAY : 3500
 Mouse : 1426 : 178 : Click : 0 : 0 : 0
