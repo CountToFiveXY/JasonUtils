@@ -44,7 +44,7 @@ public class MacroCombiner {
         String B3run = combineRuns(Arrays.asList(B3,b3,B3,b3,B3), createTimes(5));
         String A1run = combineRuns(Arrays.asList(a1,A1,a1,A1,a1), createTimes(5));
         String A2run = combineRuns(Arrays.asList(A2,a2,A2,a2), createTimes(4));
-        String A3run = combineRuns(Arrays.asList(A3,a3,A3,a3), createTimes(4));
+        String A3run = combineRuns(Arrays.asList(A3,a3,A3), createTimes(3));
         finishedMacros.addAll(multiplySingleMacro(B2run, 1));
         finishedMacros.addAll(multiplySingleMacro(B1run, 1));
         finishedMacros.addAll(multiplySingleMacro(B3run, 1));
@@ -52,7 +52,7 @@ public class MacroCombiner {
         finishedMacros.addAll(multiplySingleMacro(A2run, 1));
         finishedMacros.addAll(multiplySingleMacro(A3run, 1));
 
-        //FilePrinter.overrideFile(finishedMacros, windowDesktop + "MP3" + macrosuffix);
+        FilePrinter.overrideFile(finishedMacros, windowDesktop + "MP3" + macrosuffix);
     }
 
     public String combineRuns(List<String> macroList, List<Integer> timesList) {
