@@ -9,6 +9,13 @@ public class MacroCombiner {
 
     FileContentHandler fileContentHandler = new FileContentHandler();
 
+    private static final String r1 = "mp1/run1";
+    private static final String r2 = "mp1/run2";
+    private static final String d1 = "mp1/D1";
+    private static final String d2 = "mp1/D2";
+    private static final String d3 = "mp2/D1";
+    private static final String d4 = "mp2/D2";
+
     private static final String a1 = "mp3/a1";
     private static final String a2 = "mp3/a2";
     private static final String a3 = "mp3/a3";
@@ -21,9 +28,11 @@ public class MacroCombiner {
     private static final String B1 = "mp3/1B";
     private static final String B2 = "mp3/2B";
     private static final String B3 = "mp3/3B";
+    private static final String B4 = "mp3/4B";
+    private static final String B5 = "mp3/5B";
     private static final String macroPath = "macroFiles/";
     private static final String macrosuffix = ".mcr";
-    private static final String windowDesktop = "/Users/ybao0/OneDrive/Desktop/";
+    private static final String windows = "/Users/ybao0/OneDrive/Desktop/Macro/";
 
     @Deprecated
     public void combineBank(List<String> macroList, List<Integer> timesList) {
@@ -34,25 +43,47 @@ public class MacroCombiner {
         finishedMacros.addAll(multiplySingleMacro(combinedRunName, 1));
         finishedMacros.addAll(multiplySingleMacro("600", 1));
         finishedMacros.addAll(multiplySingleMacro("close", 1));
-        FilePrinter.overrideFile(finishedMacros, windowDesktop + "bank" + macrosuffix);
+        FilePrinter.overrideFile(finishedMacros, windows + "bank" + macrosuffix);
+    }
+
+    public void combineMultiplayer1() {
+        List<String> dropMacro = new ArrayList<>();
+        int time = 7;
+        dropMacro.addAll(multiplySingleMacro(r1, time));
+        dropMacro.addAll(multiplySingleMacro(r2, time));
+        FilePrinter.overrideFile(dropMacro, windows + "drop" + macrosuffix);
+
+        List<String> MP1 = new ArrayList<>();
+        MP1.addAll(multiplySingleMacro(d1, time));
+        MP1.addAll(multiplySingleMacro(d2, time));
+        FilePrinter.overrideFile(MP1, windows + "MP1" + macrosuffix);
+    }
+
+    public void combineMultiplayer2() {
+        int time = 6;
+        List<String> MP2 = new ArrayList<>();
+        MP2.addAll(multiplySingleMacro(d3, time));
+        MP2.addAll(multiplySingleMacro(d4, time));
+        FilePrinter.overrideFile(MP2, windows + "MP2" + macrosuffix);
     }
 
     public void combineMultiplayer3() {
-        List<String> finishedMacros = new ArrayList<>();
-        String B2run = combineRuns(Arrays.asList(b2,B2,b2,B2,b2,B2), createTimes(6));
-        String B1run = combineRuns(Arrays.asList(b1,B1,b1,B1,b1), createTimes(5));
-        String B3run = combineRuns(Arrays.asList(B3,b3,B3,b3,B3), createTimes(5));
-        String A1run = combineRuns(Arrays.asList(a1,A1,a1,A1,a1), createTimes(5));
-        String A2run = combineRuns(Arrays.asList(A2,a2,A2,a2), createTimes(4));
-        String A3run = combineRuns(Arrays.asList(A3,a3,A3), createTimes(3));
-        finishedMacros.addAll(multiplySingleMacro(B2run, 1));
-        finishedMacros.addAll(multiplySingleMacro(B1run, 1));
-        finishedMacros.addAll(multiplySingleMacro(B3run, 1));
-        finishedMacros.addAll(multiplySingleMacro(A1run, 1));
-        finishedMacros.addAll(multiplySingleMacro(A2run, 1));
-        finishedMacros.addAll(multiplySingleMacro(A3run, 1));
+        List<String> farmMilestones = new ArrayList<>();
 
-        FilePrinter.overrideFile(finishedMacros, windowDesktop + "MP3" + macrosuffix);
+        /*
+        String B2run = combineRuns(Arrays.asList(B2,B2,B2,B2,B2,B2,B2,B2), createTimes(8));
+        String B1run = combineRuns(Arrays.asList(B1,B1,B1,B1,B1,B1,B1), createTimes(7));
+        String B3run = combineRuns(Arrays.asList(B3,B3,B3,B3,B3,B3,B3,B3), createTimes(8));
+        String A1run = combineRuns(Arrays.asList(A1,A1,A1,A1,A1,A1,A1,A1), createTimes(8));
+        String A2run = combineRuns(Arrays.asList(A2,A2,A2,A2,A2,A2,A2,A2), createTimes(8));
+        String A3run = combineRuns(Arrays.asList(A3,A3,A3,A3,A3,A3,A3,A3), createTimes(8));
+        */
+        farmMilestones.addAll(multiplySingleMacro(B1, 9));
+        farmMilestones.addAll(multiplySingleMacro(B2, 9));
+        farmMilestones.addAll(multiplySingleMacro(B3, 9));
+        farmMilestones.addAll(multiplySingleMacro(B4, 9));
+        farmMilestones.addAll(multiplySingleMacro(B5, 9));
+        FilePrinter.overrideFile(farmMilestones, windows + "MP3" + macrosuffix);
     }
 
     public String combineRuns(List<String> macroList, List<Integer> timesList) {

@@ -42,6 +42,6 @@ public class mainClass {
 
     public static void main(String[] args) {
         macroCombiner = new MacroCombiner();
-        macroCombiner.combineMultiplayer3();
+        macroCombiner.combineMultiplayer1();
     }
 }
