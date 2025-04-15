@@ -1,290 +1,212 @@
-DELAY : 2456
-Mouse : 780 : 450 : Click : 0 : 0 : 0
-DELAY : 3503
-Mouse : 1851 : 958 : Click : 0 : 0 : 0
 DELAY : 3000
-Mouse : 400 : 439 : Click : 0 : 0 : 0
-DELAY : 3969
-Mouse : 1669 : 929 : Click : 0 : 0 : 0
-DELAY : 27303
+Mouse : 780 : 450 : Click : 0 : 0 : 0
+DELAY : 3500
+Mouse : 1855 : 960 : Click : 0 : 0 : 0
+DELAY : 3500
+Mouse : 400 : 400 : Click : 0 : 0 : 0
+DELAY : 3000
+Mouse : 1764 : 935 : Click : 0 : 0 : 0
+DELAY : 25000
 Keyboard : Space : KeyDown
-DELAY : 88
+DELAY : 71
 Keyboard : Space : KeyUp
 DELAY : 440
 Keyboard : Space : KeyDown
-DELAY : 88
+DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 2576
-Keyboard : Space : KeyDown
-DELAY : 81
-Keyboard : Space : KeyUp
-DELAY : 63
+DELAY : 5856
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 440
-Keyboard : Space : KeyDown
-DELAY : 88
-Keyboard : Space : KeyUp
-DELAY : 2576
-Keyboard : Space : KeyDown
-DELAY : 81
-Keyboard : Space : KeyUp
-DELAY : 63
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 3465
+DELAY : 408
 Keyboard : Space : KeyDown
 DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 568
-Keyboard : Space : KeyDown
-DELAY : 95
-Keyboard : Space : KeyUp
-DELAY : 4801
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 3465
-Keyboard : Space : KeyDown
-DELAY : 80
-Keyboard : Space : KeyUp
-DELAY : 568
-Keyboard : Space : KeyDown
-DELAY : 95
-Keyboard : Space : KeyUp
-DELAY : 4801
-Keyboard : Space : KeyDown
-DELAY : 103
-Keyboard : Space : KeyUp
-DELAY : 97
-Keyboard : Space : KeyDown
-DELAY : 79
-Keyboard : Space : KeyUp
-DELAY : 2712
+DELAY : 6896
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 89
+DELAY : 720
 Keyboard : Space : KeyDown
 DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 63
+DELAY : 6352
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 632
 Keyboard : Space : KeyDown
 DELAY : 72
 Keyboard : Space : KeyUp
-DELAY : 4536
+DELAY : 5752
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 440
-Keyboard : Space : KeyDown
-DELAY : 88
-Keyboard : Space : KeyUp
-DELAY : 2576
+DELAY : 775
 Keyboard : Space : KeyDown
 DELAY : 81
 Keyboard : Space : KeyUp
-DELAY : 63
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 3465
-Keyboard : Space : KeyDown
-DELAY : 80
-Keyboard : Space : KeyUp
-DELAY : 568
-Keyboard : Space : KeyDown
-DELAY : 95
-Keyboard : Space : KeyUp
-DELAY : 4801
+DELAY : 8984
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 440
+DELAY : 808
 Keyboard : Space : KeyDown
-DELAY : 88
+DELAY : 109
 Keyboard : Space : KeyUp
-DELAY : 2576
+DELAY : 6818
 Keyboard : Space : KeyDown
-DELAY : 81
-Keyboard : Space : KeyUp
-DELAY : 63
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 3465
-Keyboard : Space : KeyDown
-DELAY : 80
-Keyboard : Space : KeyUp
-DELAY : 568
-Keyboard : Space : KeyDown
-DELAY : 95
-Keyboard : Space : KeyUp
-DELAY : 4801
-Keyboard : Space : KeyDown
-DELAY : 103
-Keyboard : Space : KeyUp
-DELAY : 97
-Keyboard : Space : KeyDown
-DELAY : 79
-Keyboard : Space : KeyUp
-DELAY : 2712
-Keyboard : Space : KeyDown
-DELAY : 88
-Keyboard : Space : KeyUp
 DELAY : 89
-Keyboard : Space : KeyDown
-DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 63
+DELAY : 784
 Keyboard : Space : KeyDown
-DELAY : 72
+DELAY : 64
 Keyboard : Space : KeyUp
-DELAY : 4536
+DELAY : 4178
+Keyboard : Space : KeyDown
+DELAY : 94
+Keyboard : Space : KeyUp
+DELAY : 831
+Keyboard : Space : KeyDown
+DELAY : 112
+Keyboard : Space : KeyUp
+DELAY : 6841
+Keyboard : Space : KeyDown
+DELAY : 71
+Keyboard : Space : KeyUp
+DELAY : 7041
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 80
-Keyboard : Space : KeyDown
-DELAY : 65
-Keyboard : Space : KeyUp
-DELAY : 3855
+DELAY : 792
 Keyboard : Space : KeyDown
 DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 672
+DELAY : 6472
+Keyboard : Space : KeyDown
+DELAY : 120
+Keyboard : Space : KeyUp
+DELAY : 808
+Keyboard : Space : KeyDown
+DELAY : 135
+Keyboard : Space : KeyUp
+DELAY : 6209
 Keyboard : Space : KeyDown
 DELAY : 104
 Keyboard : Space : KeyUp
-DELAY : 3081
-Keyboard : Space : KeyDown
-DELAY : 119
-Keyboard : Space : KeyUp
-DELAY : 80
-Keyboard : Space : KeyDown
-DELAY : 89
-Keyboard : Space : KeyUp
-DELAY : 4063
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 384
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 96
-Keyboard : Space : KeyDown
-DELAY : 57
-Keyboard : Space : KeyUp
-DELAY : 839
-Keyboard : Space : KeyDown
-DELAY : 80
-Keyboard : Space : KeyUp
-DELAY : 73
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 6376
-Keyboard : Space : KeyDown
-DELAY : 96
-Keyboard : Space : KeyUp
-DELAY : 88
-Keyboard : Space : KeyDown
-DELAY : 79
-Keyboard : Space : KeyUp
-DELAY : 2265
-Keyboard : Space : KeyDown
-DELAY : 103
-Keyboard : Space : KeyUp
-DELAY : 89
-Keyboard : Space : KeyDown
-DELAY : 80
-Keyboard : Space : KeyUp
-DELAY : 112
-Keyboard : Space : KeyDown
-DELAY : 63
-Keyboard : Space : KeyUp
-DELAY : 89
+DELAY : 848
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 119
+DELAY : 6073
 Keyboard : Space : KeyDown
-DELAY : 97
+DELAY : 135
 Keyboard : Space : KeyUp
-DELAY : 4311
+DELAY : 712
 Keyboard : Space : KeyDown
-DELAY : 64
+DELAY : 111
 Keyboard : Space : KeyUp
-DELAY : 96
-Keyboard : Space : KeyDown
-DELAY : 73
-Keyboard : Space : KeyUp
-DELAY : 87
-Keyboard : Space : KeyDown
-DELAY : 72
-Keyboard : Space : KeyUp
-DELAY : 3161
+DELAY : 7105
 Keyboard : Space : KeyDown
 DELAY : 87
 Keyboard : Space : KeyUp
-DELAY : 601
+DELAY : 937
 Keyboard : Space : KeyDown
-DELAY : 95
+DELAY : 87
 Keyboard : Space : KeyUp
-DELAY : 6976
+DELAY : 937
 Keyboard : Space : KeyDown
-DELAY : 73
+DELAY : 71
 Keyboard : Space : KeyUp
-DELAY : 200
+DELAY : 440
 Keyboard : Space : KeyDown
-DELAY : 72
+DELAY : 80
 Keyboard : Space : KeyUp
-DELAY : 4064
-Keyboard : Space : KeyDown
-DELAY : 72
-Keyboard : Space : KeyUp
-DELAY : 608
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 3735
-Keyboard : Space : KeyDown
-DELAY : 64
-Keyboard : Space : KeyUp
-DELAY : 200
-Keyboard : Space : KeyDown
-DELAY : 72
-Keyboard : Space : KeyUp
-DELAY : 4232
+DELAY : 5856
 Keyboard : Space : KeyDown
 DELAY : 88
 Keyboard : Space : KeyUp
+DELAY : 408
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 6896
+Keyboard : Space : KeyDown
 DELAY : 88
+Keyboard : Space : KeyUp
+DELAY : 720
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 6352
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 632
 Keyboard : Space : KeyDown
 DELAY : 72
 Keyboard : Space : KeyUp
-DELAY : 5600
+DELAY : 5752
 Keyboard : Space : KeyDown
-DELAY : 112
+DELAY : 88
 Keyboard : Space : KeyUp
-DELAY : 168
+DELAY : 775
+Keyboard : Space : KeyDown
+DELAY : 81
+Keyboard : Space : KeyUp
+DELAY : 8984
+Keyboard : Space : KeyDown
+DELAY : 88
+Keyboard : Space : KeyUp
+DELAY : 808
+Keyboard : Space : KeyDown
+DELAY : 109
+Keyboard : Space : KeyUp
+DELAY : 6818
 Keyboard : Space : KeyDown
 DELAY : 89
 Keyboard : Space : KeyUp
-DELAY : 6744
-Mouse : 1613 : 899 : Click : 0 : 0 : 0
-DELAY : 4376
-Mouse : 1734 : 960 : Click : 0 : 0 : 0
-DELAY : 4248
-Mouse : 1734 : 960 : Click : 0 : 0 : 0
-DELAY : 6984
-Mouse : 1736 : 956 : Click : 0 : 0 : 0
+DELAY : 784
+Keyboard : Space : KeyDown
+DELAY : 64
+Keyboard : Space : KeyUp
+DELAY : 4178
+Keyboard : Space : KeyDown
+DELAY : 94
+Keyboard : Space : KeyUp
+DELAY : 831
+Keyboard : Space : KeyDown
+DELAY : 112
+Keyboard : Space : KeyUp
+DELAY : 6841
+Keyboard : Space : KeyDown
+DELAY : 71
+Keyboard : Space : KeyUp
+DELAY : 7041
+Keyboard : Space : KeyDown
+DELAY : 88
+Keyboard : Space : KeyUp
+DELAY : 792
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 6472
+Keyboard : Space : KeyDown
+DELAY : 120
+Keyboard : Space : KeyUp
+DELAY : 808
+Keyboard : Space : KeyDown
+DELAY : 135
+Keyboard : Space : KeyUp
 DELAY : 2000
-Mouse : 1736 : 956 : Click : 0 : 0 : 0
-DELAY : 2500
-Mouse : 1664 : 247 : Click : 0 : 0 : 0
-DELAY : 2500
-Mouse : 1882 : 26 : Click : 0 : 0 : 0
+Mouse : 1718 : 991 : LeftButtonDown : 0 : 0 : 0
+DELAY : 3840
+Mouse : 1718 : 991 : LeftButtonDown : 0 : 0 : 0
+DELAY : 5151
+Mouse : 1900 : 199 : LeftButtonDown : 0 : 0 : 0
+DELAY : 2735
+Mouse : 1744 : 984 : LeftButtonDown : 0 : 0 : 0
+DELAY : 4279
+Mouse : 1734 : 989 : LeftButtonDown : 0 : 0 : 0
+DELAY : 4279
+Mouse : 1884 : 70 : LeftButtonDown : 0 : 0 : 0

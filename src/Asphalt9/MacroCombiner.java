@@ -9,22 +9,25 @@ public class MacroCombiner {
 
     FileContentHandler fileContentHandler = new FileContentHandler();
 
+    private static final String reset = "SE/reset";
+    private static final String ad = "SE/ad";
+    private static final String close = "SE/close";
+
     private static final String r1 = "mp1/run1";
     private static final String r2 = "mp1/run2";
     private static final String d1 = "mp1/D1";
     private static final String d2 = "mp1/D2";
+    private static final String s1 = "mp1/S1";
+    private static final String s2 = "mp1/S2";
+    private static final String s3 = "mp1/S3";
+    private static final String s4 = "mp1/S4";
+
     private static final String d3 = "mp2/D1";
     private static final String d4 = "mp2/D2";
 
-    private static final String a1 = "mp3/a1";
-    private static final String a2 = "mp3/a2";
-    private static final String a3 = "mp3/a3";
     private static final String A1 = "mp3/1A";
     private static final String A2 = "mp3/2A";
     private static final String A3 = "mp3/3A";
-    private static final String b1 = "mp3/b1";
-    private static final String b2 = "mp3/b2";
-    private static final String b3 = "mp3/b3";
     private static final String B1 = "mp3/1B";
     private static final String B2 = "mp3/2B";
     private static final String B3 = "mp3/3B";
@@ -46,17 +49,31 @@ public class MacroCombiner {
         FilePrinter.overrideFile(finishedMacros, windows + "bank" + macrosuffix);
     }
 
+    public void combineSE() {
+        String move = "SE/PS/move";
+        String run = "SE/PS/1";
+        List<String> SE = new ArrayList<>();
+        SE.addAll(multiplySingleMacro(move, 1));
+        SE.addAll(multiplySingleMacro(ad, 9));
+        SE.addAll(multiplySingleMacro(run, 13));
+        SE.addAll(multiplySingleMacro(ad, 9));
+        SE.addAll(multiplySingleMacro(run, 13));
+        SE.addAll(multiplySingleMacro(close, 1));
+        SE.addAll(multiplySingleMacro(reset, 1));
+        FilePrinter.overrideFile(SE, windows + "SE" + macrosuffix);
+    }
+
     public void combineMultiplayer1() {
         List<String> dropMacro = new ArrayList<>();
-        int time = 7;
-        dropMacro.addAll(multiplySingleMacro(r1, time));
-        dropMacro.addAll(multiplySingleMacro(r2, time));
+        int time = 6;
+        dropMacro.addAll(multiplySingleMacro(r1, time +1));
+        dropMacro.addAll(multiplySingleMacro(r2, time +1));
         FilePrinter.overrideFile(dropMacro, windows + "drop" + macrosuffix);
 
-        List<String> MP1 = new ArrayList<>();
-        MP1.addAll(multiplySingleMacro(d1, time));
-        MP1.addAll(multiplySingleMacro(d2, time));
-        FilePrinter.overrideFile(MP1, windows + "MP1" + macrosuffix);
+        List<String> MP1_2 = new ArrayList<>();
+        MP1_2.addAll(multiplySingleMacro(d1, time));
+        MP1_2.addAll(multiplySingleMacro(d2, time));
+        FilePrinter.overrideFile(MP1_2, windows + "MP1" + macrosuffix);
     }
 
     public void combineMultiplayer2() {
@@ -78,11 +95,11 @@ public class MacroCombiner {
         String A2run = combineRuns(Arrays.asList(A2,A2,A2,A2,A2,A2,A2,A2), createTimes(8));
         String A3run = combineRuns(Arrays.asList(A3,A3,A3,A3,A3,A3,A3,A3), createTimes(8));
         */
-        farmMilestones.addAll(multiplySingleMacro(B1, 9));
-        farmMilestones.addAll(multiplySingleMacro(B2, 9));
-        farmMilestones.addAll(multiplySingleMacro(B3, 9));
-        farmMilestones.addAll(multiplySingleMacro(B4, 9));
-        farmMilestones.addAll(multiplySingleMacro(B5, 9));
+        farmMilestones.addAll(multiplySingleMacro(B1, 4));
+        farmMilestones.addAll(multiplySingleMacro(B2, 4));
+        farmMilestones.addAll(multiplySingleMacro(B3, 4));
+        farmMilestones.addAll(multiplySingleMacro(B4, 4));
+        farmMilestones.addAll(multiplySingleMacro(B5, 3));
         FilePrinter.overrideFile(farmMilestones, windows + "MP3" + macrosuffix);
     }
 

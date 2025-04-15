@@ -1,7 +1,7 @@
 DELAY : 1500
 Mouse : 1686 : 912 : Click : 0 : 0 : 0
 DELAY : 3500
-Mouse : 1533 : 181 : Click : 0 : 0 : 0
+Mouse : 1535 : 177 : Click : 0 : 0 : 0
 DELAY : 1750
 Mouse : 611 : 461 : Click : 0 : 0 : 0
 DELAY : 2750
