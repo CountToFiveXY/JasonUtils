@@ -7,17 +7,14 @@ import FileHelper.FileDiffHandler;
 import FileHelper.FileNameHandler;
 import FileHelper.Lottery;
 
-import java.io.File;
-import java.nio.file.Paths;
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+
 
 public class mainClass {
     private static FileNameHandler fileNameHandler;
-    private static FileContentHandler fileContentHandler;
+    private static final FileContentHandler fileContentHandler = new FileContentHandler();
     private static FileDiffHandler fileDiffHandler;
     private static Combinatorics combinatorics;
     private static TaxManGraphGenerator taxManGraphGenerator;
@@ -40,8 +37,8 @@ public class mainClass {
     //output file
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
 
-    public static void main(String[] args) {
-        macroCombiner = new MacroCombiner();
-        macroCombiner.combineSE();
+    public static void main(String[] args) throws IOException {
+        syndicate = new DriverSyndicate();
+        syndicate.getCoins();
     }
 }

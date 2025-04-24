@@ -64,17 +64,25 @@ public class DriverSyndicate {
 
     private int[] setSpList () {
 
-        return new int[]{
-                1200, 1800, 2800,
-                2700, 4050, 6300,
-                4500, 6750, 10500,
+        /*
+        return new int[] {
+                960, 1440, 2240,
+                2160, 3240, 4600,
+                3600, 5400, 8400
+        };
+        */
+
+        return new int[] {
+                1800, 2700, 4800,
+                3900, 5850, 9100,
+                6000, 9000, 14000
         };
     }
 
     private int[] setCoins () {
-        int c1 = 135;
-        int c2 = 337;
-        int c3 = 0;
+        int c1 = 165;
+        int c2 = 412;
+        int c3 = 1650;
 
         return new int[] {
                 3 * c1, 4 * c1, 5 * c1,
@@ -84,7 +92,7 @@ public class DriverSyndicate {
     }
 
     private int setMaxSp() {
-        return 35000;
+        return 40000;
     }
 
     private void printCoin(int[] repeatTimes) {
