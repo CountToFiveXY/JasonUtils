@@ -63,6 +63,15 @@ public class MacroCombiner {
         FilePrinter.overrideFile(SE, windows + "SE" + macrosuffix);
     }
 
+    public void combineDS() {
+        String move = "DS/move";
+        String dsAd = "DS/ad";
+        List<String> SE = new ArrayList<>();
+        SE.addAll(multiplySingleMacro(move, 5));
+        SE.addAll(multiplySingleMacro(dsAd, 10));
+        FilePrinter.overrideFile(SE, windows + "DS" + macrosuffix);
+    }
+
     public void combineMultiplayer1() {
         List<String> dropMacro = new ArrayList<>();
         int time = 6;
