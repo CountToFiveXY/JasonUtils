@@ -50,14 +50,16 @@ public class MacroCombiner {
     }
 
     public void combineSE() {
-        String move = "SE/PS/move";
-        String run = "SE/PS/1";
+        String move = "SE/ZR/move";
+        String run = "SE/ZR/1";
         List<String> SE = new ArrayList<>();
         SE.addAll(multiplySingleMacro(move, 1));
-        SE.addAll(multiplySingleMacro(ad, 9));
-        SE.addAll(multiplySingleMacro(run, 13));
-        SE.addAll(multiplySingleMacro(ad, 9));
-        SE.addAll(multiplySingleMacro(run, 13));
+        SE.addAll(multiplySingleMacro(ad, 8));
+        SE.addAll(multiplySingleMacro(run, 11));
+        SE.addAll(multiplySingleMacro(ad, 8));
+        SE.addAll(multiplySingleMacro(run, 11));
+        SE.addAll(multiplySingleMacro(ad, 4));
+        SE.addAll(multiplySingleMacro(run, 53));
         SE.addAll(multiplySingleMacro(close, 1));
         SE.addAll(multiplySingleMacro(reset, 1));
         FilePrinter.overrideFile(SE, windows + "SE" + macrosuffix);

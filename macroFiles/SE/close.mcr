@@ -24,4 +24,4 @@ DELAY : 10000
 Mouse : 1787 : 709 : Click : 0 : 0 : 0
 DELAY : 5000
 Mouse : 1880 : 630 : Click : 0 : 0 : 0
-DELAY : 85000
+DELAY : 50000
