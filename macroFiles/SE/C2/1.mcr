@@ -2,6 +2,8 @@ DELAY : 1000
 Mouse : 1720 : 960 : Click : 0 : 0 : 0
 DELAY : 2216
 Mouse : 1720 : 960 : Click : 0 : 0 : 0
+DELAY : 500
+Mouse : 602 : 180 : Click : 0 : 0 : 0
 DELAY : 16552
 Keyboard : Space : KeyDown
 DELAY : 104
