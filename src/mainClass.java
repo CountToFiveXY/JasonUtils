@@ -38,7 +38,7 @@ public class mainClass {
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
 
     public static void main(String[] args) throws IOException {
-        syndicate = new DriverSyndicate();
-        syndicate.getCoins();
+        macroCombiner = new MacroCombiner();
+        macroCombiner.SE();
     }
 }

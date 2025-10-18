@@ -1,4 +1,4 @@
-DELAY : 3001
+DELAY : 1001
 Mouse : 1188 : 1052 : Click : 0 : 0 : 0
 DELAY : 3001
 Mouse : 1412 : 646 : Click : 0 : 0 : 0
@@ -14,8 +14,12 @@ DELAY : 1000
 Keyboard : P : KeyDown
 DELAY : 80
 Keyboard : P : KeyUp
+DELAY : 1000
+Keyboard : ShiftLeft : KeyDown
+DELAY : 96
+Keyboard : ShiftLeft : KeyUp
 DELAY : 2000
-Mouse : 1470 : 871 : Click : 0 : 0 : 0
+Mouse : 1431 : 836 : Click : 0 : 0 : 0
 DELAY : 3001
 Mouse : 1787 : 709 : Click : 0 : 0 : 0
 DELAY : 10000

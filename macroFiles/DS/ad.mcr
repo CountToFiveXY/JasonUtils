@@ -1,9 +1,9 @@
-DELAY : 2000
-Mouse : 1792 : 230 : Click : 0 : 0 : 0
-DELAY : 1173
-Mouse : 1305 : 590 : Click : 0 : 0 : 0
-DELAY : 38000
+DELAY : 500
+Mouse : 953 : 19 : Click : 0 : 0 : 0
+DELAY : 1795
+Mouse : 1378 : 544 : Click : 0 : 0 : 0
+DELAY : 35000
 Keyboard : Escape : KeyDown
-DELAY : 80
+DELAY : 104
 Keyboard : Escape : KeyUp
-DELAY : 1000
+DELAY : 2000

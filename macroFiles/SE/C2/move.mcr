@@ -3,9 +3,9 @@ Mouse : 983 : 976 : LeftButtonDown : 0 : 0 : 0
 DELAY : 69
 Mouse : 983 : 976 : LeftButtonUp : 0 : 0 : 0
 DELAY : 1479
-Mouse : 165 : 433 : Click : 0 : 0 : 0
+Mouse : 219 : 821 : Click : 0 : 0 : 0
 DELAY : 1431
-Mouse : 165 : 433 : Click : 0 : 0 : 0
+Mouse : 219 : 821 : Click : 0 : 0 : 0
 DELAY : 1477
 Mouse : 1373 : 558 : Wheel : -1 : 0 : 0
 DELAY : 14

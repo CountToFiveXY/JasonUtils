@@ -1,605 +1,824 @@
-DELAY : 1638
-Mouse : 1691 : 948 : LeftButtonDown : 0 : 0 : 0
-DELAY : 80
-Mouse : 1691 : 948 : LeftButtonUp : 0 : 0 : 0
-DELAY : 3527
-Mouse : 1707 : 428 : LeftButtonDown : 0 : 0 : 0
-DELAY : 84
-Mouse : 1707 : 428 : LeftButtonUp : 0 : 0 : 0
-DELAY : 2763
-Mouse : 1718 : 899 : LeftButtonDown : 0 : 0 : 0
-DELAY : 83
-Mouse : 1718 : 899 : LeftButtonUp : 0 : 0 : 0
-DELAY : 3176
-Mouse : 1509 : 890 : LeftButtonDown : 0 : 0 : 0
-DELAY : 75
-Mouse : 1509 : 890 : LeftButtonUp : 0 : 0 : 0
-DELAY : 27002
-Keyboard : Left : KeyDown
-DELAY : 57
-Keyboard : Left : KeyUp
-DELAY : 80
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 88
-Keyboard : Left : KeyDown
-DELAY : 71
-Keyboard : Left : KeyUp
-DELAY : 97
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 160
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 81
-Keyboard : Left : KeyUp
-DELAY : 119
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 144
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 89
-Keyboard : Left : KeyUp
-DELAY : 103
-Keyboard : Left : KeyDown
-DELAY : 87
-Keyboard : Left : KeyUp
-DELAY : 1504
-Keyboard : Left : KeyDown
+DELAY : 1000
+Mouse : 1645 : 536 : Click : 0 : 0 : 0
+DELAY : 1566
+Mouse : 1681 : 906 : LeftButtonDown : 0 : 0 : 0
 DELAY : 65
-Keyboard : Left : KeyUp
+Mouse : 1681 : 906 : LeftButtonUp : 0 : 0 : 0
+DELAY : 2538
+Mouse : 1678 : 920 : LeftButtonDown : 0 : 0 : 0
+DELAY : 60
+Mouse : 1678 : 920 : LeftButtonUp : 0 : 0 : 0
+DELAY : 9964
+Keyboard : Right : KeyDown
+DELAY : 48
+Keyboard : Right : KeyUp
 DELAY : 96
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 96
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 128
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 207
-Keyboard : Left : KeyDown
+Keyboard : Right : KeyDown
 DELAY : 57
-Keyboard : Left : KeyUp
-DELAY : 175
-Keyboard : Left : KeyDown
+Keyboard : Right : KeyUp
+DELAY : 95
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 88
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 97
+Keyboard : Right : KeyDown
+DELAY : 79
+Keyboard : Right : KeyUp
+DELAY : 88
+Keyboard : Right : KeyDown
+DELAY : 88
+Keyboard : Right : KeyUp
+DELAY : 88
+Keyboard : Right : KeyDown
 DELAY : 81
-Keyboard : Left : KeyUp
-DELAY : 368
-Keyboard : Left : KeyDown
-DELAY : 64
-Keyboard : Left : KeyUp
-DELAY : 240
-Keyboard : Left : KeyDown
-DELAY : 112
-Keyboard : Left : KeyUp
-DELAY : 216
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 89
-Keyboard : Left : KeyUp
-DELAY : 135
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 264
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
+Keyboard : Right : KeyUp
+DELAY : 279
+Keyboard : Right : KeyDown
+DELAY : 72
+Keyboard : Right : KeyUp
 DELAY : 96
+Keyboard : Right : KeyDown
+DELAY : 96
+Keyboard : Right : KeyUp
+DELAY : 80
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 1649
+Keyboard : Down : KeyDown
+DELAY : 503
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 33
+Keyboard : Down : KeyDown
+DELAY : 28
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 33
+Keyboard : Down : KeyDown
+DELAY : 29
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 45
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 24
 Keyboard : Left : KeyDown
 DELAY : 80
 Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 64
-Keyboard : Left : KeyUp
-DELAY : 6608
-Keyboard : Left : KeyDown
-DELAY : 63
-Keyboard : Left : KeyUp
-DELAY : 57
-Keyboard : Left : KeyDown
-DELAY : 41
-Keyboard : Left : KeyUp
-DELAY : 111
-Keyboard : Left : KeyDown
-DELAY : 64
-Keyboard : Left : KeyUp
-DELAY : 113
-Keyboard : Left : KeyDown
-DELAY : 87
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 152
-Keyboard : Left : KeyDown
 DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 87
-Keyboard : Left : KeyUp
-DELAY : 136
 Keyboard : Left : KeyDown
 DELAY : 73
 Keyboard : Left : KeyUp
-DELAY : 113
-Keyboard : Left : KeyDown
-DELAY : 79
-Keyboard : Left : KeyUp
-DELAY : 992
-Keyboard : Left : KeyDown
-DELAY : 63
-Keyboard : Left : KeyUp
-DELAY : 121
-Keyboard : Left : KeyDown
-DELAY : 64
-Keyboard : Left : KeyUp
-DELAY : 120
+DELAY : 88
 Keyboard : Left : KeyDown
 DELAY : 80
 Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 128
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 176
+DELAY : 79
 Keyboard : Left : KeyDown
 DELAY : 80
 Keyboard : Left : KeyUp
-DELAY : 136
+DELAY : 80
 Keyboard : Left : KeyDown
-DELAY : 79
+DELAY : 96
 Keyboard : Left : KeyUp
-DELAY : 113
-Keyboard : Left : KeyDown
-DELAY : 81
-Keyboard : Left : KeyUp
-DELAY : 863
-Keyboard : Left : KeyDown
 DELAY : 56
-Keyboard : Left : KeyUp
-DELAY : 88
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 113
-Keyboard : Left : KeyDown
+Keyboard : Down : KeyUp
+DELAY : 33
+Keyboard : Space : KeyDown
 DELAY : 79
-Keyboard : Left : KeyUp
-DELAY : 136
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 128
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 216
+Keyboard : Space : KeyUp
+DELAY : 81
+Keyboard : Space : KeyDown
+DELAY : 63
+Keyboard : Space : KeyUp
+DELAY : 88
+Keyboard : Space : KeyDown
+DELAY : 64
+Keyboard : Space : KeyUp
+DELAY : 88
+Keyboard : Space : KeyDown
+DELAY : 65
+Keyboard : Space : KeyUp
+DELAY : 79
+Keyboard : Space : KeyDown
+DELAY : 72
+Keyboard : Space : KeyUp
+DELAY : 1656
 Keyboard : Left : KeyDown
 DELAY : 64
 Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 49
-Keyboard : Left : KeyUp
-DELAY : 10143
-Keyboard : Left : KeyDown
-DELAY : 96
-Keyboard : Left : KeyUp
-DELAY : 96
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
+DELAY : 3784
+Keyboard : Down : KeyDown
+DELAY : 505
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 33
+Keyboard : Down : KeyDown
+DELAY : 29
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 48
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 12
+Keyboard : Down : KeyUp
+DELAY : 255
+Keyboard : Space : KeyDown
 DELAY : 88
-Keyboard : Left : KeyDown
+Keyboard : Space : KeyUp
+DELAY : 97
+Keyboard : Space : KeyDown
 DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 96
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 632
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 168
-Keyboard : Left : KeyDown
-DELAY : 79
-Keyboard : Left : KeyUp
-DELAY : 137
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 136
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 136
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 136
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 144
-Keyboard : Left : KeyDown
+Keyboard : Space : KeyUp
 DELAY : 71
-Keyboard : Left : KeyUp
-DELAY : 3880
-Keyboard : Right : KeyDown
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 1585
+Keyboard : Down : KeyDown
+DELAY : 508
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 11
+Keyboard : Down : KeyUp
+DELAY : 231
+Keyboard : Space : KeyDown
 DELAY : 73
-Keyboard : Right : KeyUp
-DELAY : 96
+Keyboard : Space : KeyUp
+DELAY : 320
+Keyboard : Space : KeyDown
+DELAY : 87
+Keyboard : Space : KeyUp
+DELAY : 2320
 Keyboard : Right : KeyDown
-DELAY : 72
+DELAY : 57
 Keyboard : Right : KeyUp
-DELAY : 96
+DELAY : 103
 Keyboard : Right : KeyDown
-DELAY : 80
+DELAY : 64
 Keyboard : Right : KeyUp
-DELAY : 104
-Keyboard : Right : KeyDown
-DELAY : 79
-Keyboard : Right : KeyUp
-DELAY : 113
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 120
-Keyboard : Right : KeyDown
-DELAY : 71
-Keyboard : Right : KeyUp
-DELAY : 122
-Keyboard : Right : KeyDown
-DELAY : 79
-Keyboard : Right : KeyUp
-DELAY : 168
-Keyboard : Right : KeyDown
 DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 160
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 168
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 160
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 151
 Keyboard : Right : KeyDown
 DELAY : 81
 Keyboard : Right : KeyUp
+DELAY : 87
+Keyboard : Right : KeyDown
+DELAY : 88
+Keyboard : Right : KeyUp
+DELAY : 81
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 80
+Keyboard : Right : KeyDown
+DELAY : 64
+Keyboard : Right : KeyUp
+DELAY : 287
+Keyboard : Down : KeyDown
+DELAY : 505
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 44
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 33
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 33
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 46
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 48
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 32
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 47
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 31
+Keyboard : Down : KeyDown
+DELAY : 30
+Keyboard : Down : KeyDown
+DELAY : 25
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 80
+Keyboard : Right : KeyDown
+DELAY : 72
+Keyboard : Right : KeyUp
+DELAY : 80
+Keyboard : Right : KeyDown
+DELAY : 72
+Keyboard : Right : KeyUp
+DELAY : 72
+Keyboard : Right : KeyDown
+DELAY : 88
+Keyboard : Right : KeyUp
+DELAY : 49
+Keyboard : Right : KeyDown
+DELAY : 104
+Keyboard : Right : KeyUp
+DELAY : 232
+Keyboard : Right : KeyDown
+DELAY : 151
+Keyboard : Right : KeyUp
+DELAY : 24
+Keyboard : Down : KeyUp
+DELAY : 89
+Keyboard : Space : KeyDown
+DELAY : 64
+Keyboard : Space : KeyUp
+DELAY : 95
+Keyboard : Space : KeyDown
+DELAY : 56
+Keyboard : Space : KeyUp
+DELAY : 96
+Keyboard : Space : KeyDown
+DELAY : 56
+Keyboard : Space : KeyUp
+DELAY : 80
+Keyboard : Down : KeyDown
+DELAY : 64
+Keyboard : Down : KeyUp
+DELAY : 192
+Keyboard : Right : KeyDown
+DELAY : 64
+Keyboard : Right : KeyUp
+DELAY : 96
+Keyboard : Right : KeyDown
+DELAY : 105
+Keyboard : Right : KeyUp
+DELAY : 56
+Keyboard : Right : KeyDown
+DELAY : 88
+Keyboard : Right : KeyUp
+DELAY : 63
+Keyboard : Right : KeyDown
+DELAY : 88
+Keyboard : Right : KeyUp
+DELAY : 80
+Keyboard : Right : KeyDown
+DELAY : 89
+Keyboard : Right : KeyUp
+DELAY : 207
+Keyboard : Space : KeyDown
+DELAY : 80
+Keyboard : Space : KeyUp
+DELAY : 97
+Keyboard : Space : KeyDown
+DELAY : 63
+Keyboard : Space : KeyUp
+DELAY : 96
+Keyboard : Space : KeyDown
+DELAY : 72
+Keyboard : Space : KeyUp
+DELAY : 89
+Keyboard : Space : KeyDown
+DELAY : 64
+Keyboard : Space : KeyUp
+DELAY : 80
+Keyboard : Space : KeyDown
+DELAY : 56
+Keyboard : Space : KeyUp
+DELAY : 7072
+Keyboard : Right : KeyDown
+DELAY : 513
+Keyboard : Right : KeyDown
+DELAY : 32
+Keyboard : Right : KeyDown
+DELAY : 32
+Keyboard : Right : KeyDown
+DELAY : 30
+Keyboard : Right : KeyDown
+DELAY : 32
+Keyboard : Right : KeyDown
+DELAY : 25
+Keyboard : Right : KeyUp
+DELAY : 871
+Keyboard : Right : KeyDown
+DELAY : 56
+Keyboard : Right : KeyUp
+DELAY : 112
+Keyboard : Right : KeyDown
+DELAY : 48
+Keyboard : Right : KeyUp
+DELAY : 128
+Keyboard : Right : KeyDown
+DELAY : 48
+Keyboard : Right : KeyUp
+DELAY : 152
+Keyboard : Right : KeyDown
+DELAY : 64
+Keyboard : Right : KeyUp
+DELAY : 104
+Keyboard : Right : KeyDown
+DELAY : 72
+Keyboard : Right : KeyUp
+DELAY : 105
+Keyboard : Right : KeyDown
+DELAY : 79
+Keyboard : Right : KeyUp
+DELAY : 217
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 111
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 369
+Keyboard : Right : KeyDown
+DELAY : 55
+Keyboard : Right : KeyUp
+DELAY : 409
+Keyboard : Right : KeyDown
+DELAY : 79
+Keyboard : Right : KeyUp
+DELAY : 168
+Keyboard : Space : KeyDown
+DELAY : 72
+Keyboard : Space : KeyUp
+DELAY : 96
+Keyboard : Space : KeyDown
+DELAY : 65
+Keyboard : Space : KeyUp
 DELAY : 143
 Keyboard : Right : KeyDown
-DELAY : 89
+DELAY : 73
 Keyboard : Right : KeyUp
-DELAY : 1752
+DELAY : 103
 Keyboard : Right : KeyDown
 DELAY : 72
 Keyboard : Right : KeyUp
-DELAY : 120
+DELAY : 144
+Keyboard : Right : KeyDown
+DELAY : 73
+Keyboard : Right : KeyUp
+DELAY : 40
+Keyboard : Space : KeyDown
+DELAY : 71
+Keyboard : Space : KeyUp
+DELAY : 176
+Keyboard : Right : KeyDown
+DELAY : 33
+Keyboard : Right : KeyUp
+DELAY : 111
 Keyboard : Right : KeyDown
 DELAY : 72
 Keyboard : Right : KeyUp
 DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 136
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 128
-Keyboard : Right : KeyDown
-DELAY : 96
-Keyboard : Right : KeyUp
-DELAY : 135
-Keyboard : Right : KeyDown
-DELAY : 106
-Keyboard : Right : KeyUp
-DELAY : 119
-Keyboard : Right : KeyDown
-DELAY : 95
-Keyboard : Right : KeyUp
-DELAY : 137
-Keyboard : Right : KeyDown
-DELAY : 104
-Keyboard : Right : KeyUp
-DELAY : 3663
-Keyboard : Right : KeyDown
+Keyboard : Space : KeyDown
 DELAY : 64
-Keyboard : Right : KeyUp
-DELAY : 457
+Keyboard : Space : KeyUp
+DELAY : 432
 Keyboard : Right : KeyDown
 DELAY : 80
 Keyboard : Right : KeyUp
-DELAY : 704
+DELAY : 121
+Keyboard : Right : KeyDown
+DELAY : 55
+Keyboard : Right : KeyUp
+DELAY : 241
+Keyboard : Space : KeyDown
+DELAY : 63
+Keyboard : Space : KeyUp
+DELAY : 97
+Keyboard : Space : KeyDown
+DELAY : 63
+Keyboard : Space : KeyUp
+DELAY : 144
+Keyboard : Right : KeyDown
+DELAY : 65
+Keyboard : Right : KeyUp
+DELAY : 104
+Keyboard : Right : KeyDown
+DELAY : 64
+Keyboard : Right : KeyUp
+DELAY : 95
 Keyboard : Right : KeyDown
 DELAY : 40
 Keyboard : Right : KeyUp
-DELAY : 984
-Keyboard : Right : KeyDown
-DELAY : 48
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 64
-Keyboard : Right : KeyUp
-DELAY : 128
-Keyboard : Right : KeyDown
+DELAY : 6329
+Mouse : 1742 : 939 : LeftButtonDown : 0 : 0 : 0
+DELAY : 77
+Mouse : 1742 : 939 : LeftButtonUp : 0 : 0 : 0
+DELAY : 3346
+Mouse : 1207 : 1051 : LeftButtonDown : 0 : 0 : 0
+DELAY : 62
+Mouse : 1207 : 1051 : LeftButtonUp : 0 : 0 : 0
+DELAY : 3585
+Mouse : 1523 : 619 : LeftButtonDown : 0 : 0 : 0
+DELAY : 69
+Mouse : 1523 : 619 : LeftButtonUp : 0 : 0 : 0
+DELAY : 1335
+Keyboard : A : KeyDown
+DELAY : 80
+Keyboard : A : KeyUp
+DELAY : 328
+Keyboard : S : KeyDown
 DELAY : 56
-Keyboard : Right : KeyUp
-DELAY : 128
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 128
-Keyboard : Right : KeyDown
-DELAY : 72
-Keyboard : Right : KeyUp
-DELAY : 127
-Keyboard : Right : KeyDown
-DELAY : 57
-Keyboard : Right : KeyUp
-DELAY : 127
-Keyboard : Right : KeyDown
-DELAY : 57
-Keyboard : Right : KeyUp
-DELAY : 136
-Keyboard : Right : KeyDown
+Keyboard : S : KeyUp
+DELAY : 776
+Keyboard : P : KeyDown
 DELAY : 48
-Keyboard : Right : KeyUp
-DELAY : 128
-Keyboard : Right : KeyDown
-DELAY : 64
-Keyboard : Right : KeyUp
-DELAY : 120
-Keyboard : Right : KeyDown
-DELAY : 64
-Keyboard : Right : KeyUp
-DELAY : 1392
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 64
-Keyboard : Left : KeyUp
-DELAY : 128
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 135
-Keyboard : Left : KeyDown
-DELAY : 81
-Keyboard : Left : KeyUp
-DELAY : 160
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 136
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 152
-Keyboard : Left : KeyDown
-DELAY : 96
-Keyboard : Left : KeyUp
-DELAY : 176
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 160
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 128
-Keyboard : Left : KeyDown
-DELAY : 81
-Keyboard : Left : KeyUp
-DELAY : 767
-Keyboard : Left : KeyDown
-DELAY : 49
-Keyboard : Left : KeyUp
-DELAY : 96
-Keyboard : Left : KeyDown
-DELAY : 87
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 111
-Keyboard : Left : KeyDown
-DELAY : 97
-Keyboard : Left : KeyUp
-DELAY : 104
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 103
-Keyboard : Left : KeyDown
-DELAY : 97
-Keyboard : Left : KeyUp
-DELAY : 296
-Keyboard : Left : KeyDown
-DELAY : 88
-Keyboard : Left : KeyUp
-DELAY : 112
-Keyboard : Left : KeyDown
-DELAY : 80
-Keyboard : Left : KeyUp
-DELAY : 120
-Keyboard : Left : KeyDown
-DELAY : 72
-Keyboard : Left : KeyUp
-DELAY : 2312
-Keyboard : Right : KeyDown
-DELAY : 79
-Keyboard : Right : KeyUp
-DELAY : 97
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 72
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 103
-Keyboard : Right : KeyDown
-DELAY : 89
-Keyboard : Right : KeyUp
-DELAY : 104
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 104
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 88
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 81
-Keyboard : Right : KeyUp
-DELAY : 142
-Keyboard : Right : KeyDown
-DELAY : 80
-Keyboard : Right : KeyUp
-DELAY : 137
-Keyboard : Right : KeyDown
-DELAY : 79
-Keyboard : Right : KeyUp
-DELAY : 121
-Keyboard : Right : KeyDown
-DELAY : 71
-Keyboard : Right : KeyUp
-DELAY : 129
-Keyboard : Right : KeyDown
-DELAY : 56
-Keyboard : Right : KeyUp
-DELAY : 120
-Keyboard : Right : KeyDown
-DELAY : 64
-Keyboard : Right : KeyUp
-DELAY : 112
-Keyboard : Right : KeyDown
-DELAY : 79
-Keyboard : Right : KeyUp
-DELAY : 19402
-Mouse : 1710 : 946 : LeftButtonDown : 0 : 0 : 0
-DELAY : 81
-Mouse : 1710 : 946 : LeftButtonUp : 0 : 0 : 0
-DELAY : 2552
-Mouse : 1709 : 941 : LeftButtonDown : 0 : 0 : 0
-DELAY : 72
-Mouse : 1709 : 941 : LeftButtonUp : 0 : 0 : 0
-DELAY : 1911
-Mouse : 1581 : 773 : LeftButtonDown : 0 : 0 : 0
-DELAY : 82
-Mouse : 1581 : 773 : LeftButtonUp : 0 : 0 : 0
-DELAY : 36837
-Mouse : 1676 : 951 : LeftButtonDown : 0 : 0 : 0
+Keyboard : P : KeyUp
+DELAY : 1658
+Mouse : 1252 : 850 : LeftButtonDown : 0 : 0 : 0
 DELAY : 58
-Mouse : 1676 : 951 : LeftButtonUp : 0 : 0 : 0
-DELAY : 3614
-Mouse : 1865 : 171 : LeftButtonDown : 0 : 0 : 0
-DELAY : 89
-Mouse : 1865 : 171 : LeftButtonUp : 0 : 0 : 0
-DELAY : 2126
-Mouse : 1714 : 897 : LeftButtonDown : 0 : 0 : 0
-DELAY : 79
-Mouse : 1714 : 897 : LeftButtonUp : 0 : 0 : 0
-DELAY : 1500
+Mouse : 1252 : 850 : LeftButtonUp : 0 : 0 : 0
+DELAY : 984
+Mouse : 1796 : 680 : LeftButtonDown : 0 : 0 : 0
+DELAY : 50
+Mouse : 1796 : 679 : LeftButtonUp : 0 : 0 : 0
+DELAY : 29602
+Mouse : 1637 : 621 : LeftButtonDown : 0 : 0 : 0
+DELAY : 65
+Mouse : 1637 : 621 : LeftButtonUp : 0 : 0 : 0
+DELAY : 1895
+Mouse : 1887 : 607 : LeftButtonDown : 0 : 0 : 0
+DELAY : 61
+Mouse : 1887 : 607 : LeftButtonUp : 0 : 0 : 0
+DELAY : 2984
+Mouse : 140 : 641 : RightButtonDown : 0 : 0 : 0
+DELAY : 114
+Mouse : 140 : 641 : RightButtonUp : 0 : 0 : 0
+DELAY : 2095
+Mouse : 262 : 322 : LeftButtonDown : 0 : 0 : 0
+DELAY : 68
+Mouse : 262 : 322 : LeftButtonUp : 0 : 0 : 0
+DELAY : 25000
+Mouse : 963 : 929 : LeftButtonDown : 0 : 0 : 0
+DELAY : 70
+Mouse : 963 : 929 : LeftButtonUp : 0 : 0 : 0
+DELAY : 1768
+Mouse : 146 : 354 : LeftButtonDown : 0 : 0 : 0
+DELAY : 68
+Mouse : 146 : 354 : LeftButtonUp : 0 : 0 : 0
+DELAY : 1584
+Mouse : 146 : 354 : LeftButtonDown : 0 : 0 : 0
+DELAY : 84
+Mouse : 146 : 354 : LeftButtonUp : 0 : 0 : 0
+DELAY : 3790
+Mouse : 826 : 23 : LeftButtonDown : 0 : 0 : 0
+DELAY : 70
+Mouse : 826 : 23 : LeftButtonUp : 0 : 0 : 0
