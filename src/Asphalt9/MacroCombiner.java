@@ -3,6 +3,7 @@ package Asphalt9;
 import FileHelper.FileContentHandler;
 import IO.FilePrinter;
 
+import java.io.IOException;
 import java.util.*;
 
 public class MacroCombiner {
@@ -46,12 +47,12 @@ public class MacroCombiner {
         List<String> SE = new ArrayList<>();
         SE.addAll(multiplySingleMacro(move, 1));
         SE.addAll(multiplySingleMacro(run, 9));
-        SE.addAll(multiplySingleMacro(ad, 6));
+        SE.addAll(multiplySingleMacro(ad, 7));
         SE.addAll(multiplySingleMacro(run, 9));
         SE.addAll(multiplySingleMacro(ad, 7));
         SE.addAll(multiplySingleMacro(run, 5));
-        SE.addAll(multiplySingleMacro(ad, 4));
-        SE.addAll(multiplySingleMacro(close, 2));
+        SE.addAll(multiplySingleMacro(ad, 3));
+        SE.addAll(multiplySingleMacro(close, 1));
         SE.addAll(multiplySingleMacro(reset, 1));
         FilePrinter.overrideFile(SE, windows + "SE" + macrosuffix);
     }
@@ -105,6 +106,11 @@ public class MacroCombiner {
         farmMilestones.addAll(multiplySingleMacro(B4, 4));
         farmMilestones.addAll(multiplySingleMacro(B5, 3));
         FilePrinter.overrideFile(farmMilestones, windows + "MP3" + macrosuffix);
+    }
+
+    public static void main(String[] args) throws IOException {
+        MacroCombiner macroCombiner = new MacroCombiner();
+        macroCombiner.SE();
     }
 
     public String combineRuns(List<String> macroList, List<Integer> timesList) {
