@@ -1,3 +1,0 @@
- start = 0, end = len; if nums[mid] < target, start = mid + 1, else end = mid, return start;
-
-278. https://leetcode.com/problems/first-bad-version/

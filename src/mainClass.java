@@ -1,5 +1,5 @@
 import Algorithm.Combinatorics;
-import Asphalt9.DriverSyndicate;
+import Asphalt9.MacroCombiner;
 import FileHelper.TaxManGraphGenerator;
 import FileHelper.FileContentHandler;
 import FileHelper.FileDiffHandler;
@@ -18,7 +18,6 @@ public class mainClass {
     private static Combinatorics combinatorics;
     private static TaxManGraphGenerator taxManGraphGenerator;
     private static Lottery lottery;
-    private static DriverSyndicate syndicate;
 
     //folder path
     private static final String TEST_IN = "testFile/input/";
@@ -36,5 +35,6 @@ public class mainClass {
     private static final String OUTPUT_FILE_PATH = TEST_OUT + "out";
 
     public static void main(String[] args) throws IOException {
+
     }
 }

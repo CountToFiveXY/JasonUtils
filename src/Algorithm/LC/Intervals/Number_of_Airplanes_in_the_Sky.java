@@ -1,4 +1,4 @@
-package Algorithm.scan_line;
+package Algorithm.LC.Intervals;
 
 /*
 Description
