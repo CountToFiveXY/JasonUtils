@@ -3,9 +3,9 @@ Keyboard : LWindows : KeyDown
 DELAY : 56
 Keyboard : LWindows : KeyUp
 DELAY : 1491
-Mouse : 1126 : 516 : Click : 0 : 0 : 0
+Mouse : 973 : 506 : Click : 0 : 0 : 0
 DELAY : 3001
-Mouse : 1412 : 646 : Click : 0 : 0 : 0
+Mouse : 1352 : 28 : Click : 0 : 0 : 0
 DELAY : 2500
 Keyboard : A : KeyDown
 DELAY : 80
@@ -23,13 +23,11 @@ Keyboard : ShiftLeft : KeyDown
 DELAY : 96
 Keyboard : ShiftLeft : KeyUp
 DELAY : 2000
-Mouse : 1431 : 836 : Click : 0 : 0 : 0
+Mouse : 1383 : 215 : Click : 0 : 0 : 0
 DELAY : 2500
-Mouse : 1787 : 709 : Click : 0 : 0 : 0
-DELAY : 10000
-Mouse : 1787 : 709 : Click : 0 : 0 : 0
-DELAY : 3000
-Mouse : 1787 : 709 : Click : 0 : 0 : 0
+Mouse : 1794 : 97 : Click : 0 : 0 : 0
 DELAY : 5000
-Mouse : 1880 : 630 : Click : 0 : 0 : 0
-DELAY : 10000
+Mouse : 1794 : 97 : Click : 0 : 0 : 0
+DELAY : 3000
+Mouse : 1882 : 25 : Click : 0 : 0 : 0
+DELAY : 8000
