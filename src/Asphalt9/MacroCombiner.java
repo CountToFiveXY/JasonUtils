@@ -4,30 +4,32 @@ import FileHelper.FileContentHandler;
 import IO.FilePrinter;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class MacroCombiner {
 
-    FileContentHandler fileContentHandler = new FileContentHandler();
+    private final FileContentHandler fileContentHandler = new FileContentHandler();
 
-    private static final String close = "close";
-    private static final String reset = "reset";
-    private static final String loading = "load";
-    private static final String window = "window";
-    private static final String ad = "ad";
-    private static final String open = "opengame";
+    private static final String CLOSE = "close";
+    private static final String RESET = "reset";
+    private static final String LOADING = "load";
+    private static final String WINDOWED = "window";
+    private static final String AD = "ad";
+    private static final String OPEN = "opengame";
 
-    private static final String mp1_d1 = "mp1/D1";
-    private static final String mp1_d2 = "mp1/D2";
+    private static final String MP1_D1 = "mp1/D1";
+    private static final String MP1_D2 = "mp1/D2";
+    private static final String MP2_D1 = "mp2/D1";
+    private static final String MP2_D2 = "mp2/D2";
 
-    private static final String mp2_d1 = "mp2/D1";
-    private static final String mp2_d2 = "mp2/D2";
-    private static final String macroPath = "macroFiles/";
-    private static final String macrosuffix = ".mcr";
+    private static final String MACRO_PATH = "macroFiles/";
+    private static final String MACRO_SUFFIX = ".mcr";
+
     private static final String windows = "/Users/ybao0/OneDrive/Desktop/Macro/";
 
     public MacroCombiner() {
-        FilePrinter.overrideFile(resets(), windows + "reset" + macrosuffix);
+        writeMacro("reset", resets());
     }
 
     public static void main(String[] args) throws IOException {
@@ -36,101 +38,137 @@ public class MacroCombiner {
     }
 
     public void SE() {
-        String se = "SE/SE3";
-        List<String> macro = new ArrayList<>(multiplySingleMacro(se, 1));
+        String start = "SE/SE3";
         String move = "SE/SH/P1";
         String run = "SE/SH/1";
-        macro.addAll(multiplySingleMacro(move, 1));
-        macro.addAll(multiplySingleMacro(run, 9));
-        macro.addAll(multiplySingleMacro(ad, 7));
-        macro.addAll(multiplySingleMacro(run, 9));
-        macro.addAll(multiplySingleMacro(ad, 7));
-        macro.addAll(multiplySingleMacro(run, 3));
-        macro.addAll(multiplySingleMacro(ad, 2));
+
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, start, 1);
+        addMacro(macro, move, 1);
+        addMacro(macro, run, 9);
+        addMacro(macro, AD, 7);
+        addMacro(macro, run, 9);
+        addMacro(macro, AD, 7);
+        addMacro(macro, run, 3);
+        addMacro(macro, AD, 2);
         macro.addAll(resets());
-        FilePrinter.overrideFile(macro, windows + "SE" + macrosuffix);
+
+        writeMacro("SE", macro);
     }
 
     public void spotlight() {
-        String se = "SE/SE1";
-        List<String> macro = new ArrayList<>(multiplySingleMacro(se, 1));
+        String start = "SE/SE1";
         String move = "SE/SP/move";
         String run = "SE/SP/1";
-        macro.addAll(multiplySingleMacro(move, 1));
-        macro.addAll(multiplySingleMacro(run, 9));
-        macro.addAll(multiplySingleMacro(ad, 7));
-        macro.addAll(multiplySingleMacro(run, 9));
-        macro.addAll(multiplySingleMacro(ad, 7));
-        macro.addAll(multiplySingleMacro(run, 3));
-        macro.addAll(multiplySingleMacro(ad, 2));
+
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, start, 1);
+        addMacro(macro, move, 1);
+        addMacro(macro, run, 9);
+        addMacro(macro, AD, 7);
+        addMacro(macro, run, 9);
+        addMacro(macro, AD, 7);
+        addMacro(macro, run, 3);
+        addMacro(macro, AD, 2);
         macro.addAll(resets());
-        FilePrinter.overrideFile(macro, windows + "SP" + macrosuffix);
+
+        writeMacro("SP", macro);
     }
 
     public void carHunt() {
         String move = "CH/P1";
         String run = "CH/1";
-        String select = "CH/select";
-        String fuel = "CH/fuel1";
-        List<String> SE = new ArrayList<>();
-        SE.addAll(multiplySingleMacro(move, 1));
-        SE.addAll(multiplySingleMacro(run, 5));
-        SE.addAll(multiplySingleMacro(fuel, 1));
-        SE.addAll(multiplySingleMacro(move, 1));
-        SE.addAll(multiplySingleMacro(ad, 9));
-        SE.addAll(multiplySingleMacro(run, 5));
-        SE.addAll(multiplySingleMacro(fuel, 1));
-        SE.addAll(multiplySingleMacro(move, 1));
-        SE.addAll(multiplySingleMacro(ad, 8));
-        SE.addAll(resets());
-        FilePrinter.overrideFile(SE, windows + "CarHunt" + macrosuffix);
-    }
 
-    private List<String> resets() {
+        String select = "CH/select";
+        String fuel = "CH/fuelD";
+        String base = "CH/base";
+
         List<String> macro = new ArrayList<>();
-        macro.addAll(multiplySingleMacro(close, 1));
-        macro.addAll(multiplySingleMacro(reset, 1));
-        macro.addAll(multiplySingleMacro(open, 1));
-        macro.addAll(multiplySingleMacro(loading, 1));
-        macro.addAll(multiplySingleMacro(window, 1));
-        return macro;
+
+        addMacro(macro, move, 1);
+        addMacro(macro, run, 5);
+
+        addMacro(macro, select, 1);
+        addMacro(macro, fuel, 1);
+        addMacro(macro, base, 1);
+
+        addMacro(macro, move, 1);
+        addMacro(macro, AD, 9);
+        addMacro(macro, run, 5);
+
+        addMacro(macro, select, 1);
+        addMacro(macro, fuel, 1);
+        addMacro(macro, base, 1);
+
+        addMacro(macro, move, 1);
+        addMacro(macro, AD, 8);
+
+        macro.addAll(resets());
+
+        writeMacro("CarHunt", macro);
     }
 
     public void DS() {
         String ds = "DS/1";
         String dsAd = "DS/ad";
-        List<String> SE = new ArrayList<>();
-        SE.addAll(multiplySingleMacro(ds, 3));
-        SE.addAll(multiplySingleMacro(dsAd, 6));
-        FilePrinter.overrideFile(SE, windows + "DriverS" + macrosuffix);
+
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, ds, 3);
+        addMacro(macro, dsAd, 6);
+
+        writeMacro("DriverS", macro);
     }
 
     public void MP1() {
-        List<String> MP1 = new ArrayList<>();
-        MP1.addAll(multiplySingleMacro(mp1_d1, 6));
-        MP1.addAll(multiplySingleMacro(open, 1));
-        MP1.addAll(multiplySingleMacro(mp1_d2, 6));
-        MP1.addAll(multiplySingleMacro(open, 1));
-        FilePrinter.overrideFile(MP1, windows + "MP1" + macrosuffix);
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, MP1_D1, 6);
+        addMacro(macro, OPEN, 1);
+        addMacro(macro, MP1_D2, 6);
+        addMacro(macro, OPEN, 1);
+
+        writeMacro("MP1", macro);
     }
 
     public void MP2() {
-        int time = 6;
-        List<String> MP2 = new ArrayList<>();
-        MP2.addAll(multiplySingleMacro(mp2_d1, time));
-        MP2.addAll(multiplySingleMacro(mp2_d2, time));
-        FilePrinter.overrideFile(MP2, windows + "MP2" + macrosuffix);
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, MP2_D1, 6);
+        addMacro(macro, MP2_D2, 6);
+
+        writeMacro("MP2", macro);
+    }
+
+    private List<String> resets() {
+        List<String> macro = new ArrayList<>();
+
+        addMacro(macro, CLOSE, 1);
+        addMacro(macro, RESET, 1);
+        addMacro(macro, OPEN, 1);
+        addMacro(macro, LOADING, 1);
+        addMacro(macro, WINDOWED, 1);
+
+        return macro;
+    }
+
+    private void addMacro(List<String> macro, String macroName, int times) {
+        macro.addAll(multiplySingleMacro(macroName, times));
+    }
+
+    private void writeMacro(String fileName, List<String> macro) {
+        FilePrinter.overrideFile(
+                macro,
+                windows + fileName + MACRO_SUFFIX
+        );
     }
 
     private List<String> multiplySingleMacro(String macroName, int times) {
-        return fileContentHandler.multiplySingleFile(macroPath + macroName + macrosuffix, times);
-    }
-
-    private List<String> repeat(List<String> macro, int times) {
-        List<String> res = new ArrayList<>();
-        for (int i = 0; i < times; i++) {
-            res.addAll(macro);
-        }
-        return res;
+        return fileContentHandler.multiplySingleFile(
+                MACRO_PATH + macroName + MACRO_SUFFIX,
+                times
+        );
     }
 }
