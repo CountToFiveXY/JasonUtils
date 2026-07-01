@@ -639,18 +639,14 @@ Keyboard : Space : KeyDown
 DELAY : 64
 Keyboard : Space : KeyUp
 DELAY : 8315
-Mouse : 1670 : 967 : Click : 0 : 0 : 0
-DELAY : 2742
-Mouse : 1684 : 963 : Click : 0 : 0 : 0
-DELAY : 1512
-Mouse : 1681 : 950 : Click : 0 : 0 : 0
-DELAY : 3000
-Mouse : 96 : 156 : Click : 0 : 0 : 0
-DELAY : 1201
-Mouse : 1740 : 933 : Click : 0 : 0 : 0
-DELAY : 2990
-Mouse : 1695 : 921 : Click : 0 : 0 : 0
-DELAY : 2990
-Mouse : 1798 : 175 : Click : 0 : 0 : 0
-DELAY : 2990
-Mouse : 1838 : 222 : Click : 0 : 0 : 0
+Mouse : 1670 : 954 : Click : 0 : 0 : 0
+DELAY : 3262
+Mouse : 1670 : 948 : Click : 0 : 0 : 0
+DELAY : 3839
+Mouse : 1671 : 944 : Click : 0 : 0 : 0
+DELAY : 3793
+Mouse : 411 : 215 : Click : 0 : 0 : 0
+DELAY : 2038
+Mouse : 1716 : 921 : Click : 0 : 0 : 0
+DELAY : 2219
+Mouse : 1152 : 258 : Click : 0 : 0 : 0

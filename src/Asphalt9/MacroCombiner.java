@@ -32,56 +32,45 @@ public class MacroCombiner {
 
     public static void main(String[] args) throws IOException {
         MacroCombiner macroCombiner = new MacroCombiner();
-        macroCombiner.spotlight();
+        macroCombiner.carHunt();
     }
 
     public void SE() {
         String se = "SE/SE3";
-        List<String> SE = new ArrayList<>(multiplySingleMacro(se, 1));
-
+        List<String> macro = new ArrayList<>(multiplySingleMacro(se, 1));
         String move = "SE/SH/P1";
         String run = "SE/SH/1";
-        SE.addAll(multiplySingleMacro(move, 1));
-        SE.addAll(multiplySingleMacro(run, 9));
-        SE.addAll(multiplySingleMacro(ad, 7));
-        SE.addAll(multiplySingleMacro(run, 9));
-        SE.addAll(multiplySingleMacro(ad, 7));
-        SE.addAll(multiplySingleMacro(run, 3));
-        SE.addAll(multiplySingleMacro(ad, 2));
-        SE.addAll(resets());
-        FilePrinter.overrideFile(SE, windows + "SE" + macrosuffix);
+        macro.addAll(multiplySingleMacro(move, 1));
+        macro.addAll(multiplySingleMacro(run, 9));
+        macro.addAll(multiplySingleMacro(ad, 7));
+        macro.addAll(multiplySingleMacro(run, 9));
+        macro.addAll(multiplySingleMacro(ad, 7));
+        macro.addAll(multiplySingleMacro(run, 3));
+        macro.addAll(multiplySingleMacro(ad, 2));
+        macro.addAll(resets());
+        FilePrinter.overrideFile(macro, windows + "SE" + macrosuffix);
     }
 
     public void spotlight() {
         String se = "SE/SE1";
-        List<String> SP = new ArrayList<>(multiplySingleMacro(se, 1));
-
+        List<String> macro = new ArrayList<>(multiplySingleMacro(se, 1));
         String move = "SE/SP/move";
         String run = "SE/SP/1";
-        SP.addAll(multiplySingleMacro(move, 1));
-        SP.addAll(multiplySingleMacro(run, 9));
-        SP.addAll(multiplySingleMacro(ad, 7));
-        SP.addAll(multiplySingleMacro(run, 9));
-        SP.addAll(multiplySingleMacro(ad, 7));
-        SP.addAll(multiplySingleMacro(run, 3));
-        SP.addAll(multiplySingleMacro(ad, 2));
-        SP.addAll(resets());
-        FilePrinter.overrideFile(SP, windows + "SP" + macrosuffix);
-    }
-
-    private List<String> resets() {
-        List<String> SE = new ArrayList<>();
-        SE.addAll(multiplySingleMacro(close, 1));
-        SE.addAll(multiplySingleMacro(reset, 1));
-        SE.addAll(multiplySingleMacro(open, 1));
-        SE.addAll(multiplySingleMacro(loading, 1));
-        SE.addAll(multiplySingleMacro(window, 1));
-        return SE;
+        macro.addAll(multiplySingleMacro(move, 1));
+        macro.addAll(multiplySingleMacro(run, 9));
+        macro.addAll(multiplySingleMacro(ad, 7));
+        macro.addAll(multiplySingleMacro(run, 9));
+        macro.addAll(multiplySingleMacro(ad, 7));
+        macro.addAll(multiplySingleMacro(run, 3));
+        macro.addAll(multiplySingleMacro(ad, 2));
+        macro.addAll(resets());
+        FilePrinter.overrideFile(macro, windows + "SP" + macrosuffix);
     }
 
     public void carHunt() {
-        String move = "CH/move1";
+        String move = "CH/P1";
         String run = "CH/1";
+        String select = "CH/select";
         String fuel = "CH/fuel1";
         List<String> SE = new ArrayList<>();
         SE.addAll(multiplySingleMacro(move, 1));
@@ -95,6 +84,16 @@ public class MacroCombiner {
         SE.addAll(multiplySingleMacro(ad, 8));
         SE.addAll(resets());
         FilePrinter.overrideFile(SE, windows + "CarHunt" + macrosuffix);
+    }
+
+    private List<String> resets() {
+        List<String> macro = new ArrayList<>();
+        macro.addAll(multiplySingleMacro(close, 1));
+        macro.addAll(multiplySingleMacro(reset, 1));
+        macro.addAll(multiplySingleMacro(open, 1));
+        macro.addAll(multiplySingleMacro(loading, 1));
+        macro.addAll(multiplySingleMacro(window, 1));
+        return macro;
     }
 
     public void DS() {
@@ -127,7 +126,11 @@ public class MacroCombiner {
         return fileContentHandler.multiplySingleFile(macroPath + macroName + macrosuffix, times);
     }
 
-    private List<Integer> createTimes(int gas) {
-        return Collections.nCopies(gas, 1);
+    private List<String> repeat(List<String> macro, int times) {
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < times; i++) {
+            res.addAll(macro);
+        }
+        return res;
     }
 }

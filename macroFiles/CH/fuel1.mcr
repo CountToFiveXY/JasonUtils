@@ -13,11 +13,9 @@ Mouse : 1228 : 562 : Click : 0 : 0 : 0
 DELAY : 35000
 Mouse : 1228 : 562 : Click : 0 : 0 : 0
 DELAY : 35000
-Mouse : 1228 : 562 : Click : 0 : 0 : 0
-DELAY : 35000
-Mouse : 1228 : 562 : Click : 0 : 0 : 0
-DELAY : 35000
-Mouse : 1228 : 562 : Click : 0 : 0 : 0
-DELAY : 35000
-Mouse : 1878 : 55 : Click : 0 : 0 : 0
+Keyboard : Escape : KeyDown
+DELAY : 59
+Keyboard : Escape : KeyUp
+DELAY : 3000
+Mouse : 1876 : 61 : Click : 0 : 0 : 0
 DELAY : 2000
