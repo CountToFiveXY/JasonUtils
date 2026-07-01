@@ -16,12 +16,7 @@ public class FilePrinter {
     public static void writeToFile(List<String> text, String fileName) {
         try {
             boolean isExisted = new File(fileName).exists();
-            writer = new BufferedWriter(new FileWriter(fileName, true));
-
-            if (isExisted) {
-                writer.write(NEW_LINE );
-                writeNewLine(SEPARATOR);
-            }
+            writer = new BufferedWriter(new FileWriter(fileName, false));
 
             for (Iterator<String> iterator = text.iterator(); iterator.hasNext();) {
                 String line = iterator.next();

@@ -1,47 +1,32 @@
 package Algorithm;
 
+import java.sql.Array;
 import java.util.*;
 
 public class codetest {
 
-    static List<List<Integer>> result = new ArrayList<>();
-    static Stack<Integer> prices = new Stack<>();
-    static Stack<Integer> span = new Stack<>();
 
-    public static void main(String[] args) {
-        String[] input = {"root/qgjazhtliq/djmevsktisuvd/acsuolhnermqzok/mkts/ibrdqxawjgut/emb wl.txt(odumfqzwczehoyk) " +
-                "z.txt(gojsklotgchjzfm) txtoyg.txt(gojsklotgchjzfm) eupidhefx.txt(ahlsazuzrsf) " +
-                "rekzkaifwp.txt(yfxaymkefaofowqjpgaceffkjsehtmqkgy) l.txt(odumfqzwczehoyk) bqmhpxumxlbe.txt(yfxaymkefaofowqjpgaceffkjsehtmqkgy) " +
-                "qoqgiauqbayuc.txt(odumfqzwczehoyk) mpstemqlxy.txt(ahlsazuzrsf)"};
-        System.out.println(findDuplicate(input));
-    }
+    public static int subarraySum(int[] nums, int k) {
+        HashMap<Integer, List<Integer>> map = new HashMap<>();
+        //sum to inex map
 
+        int n = nums.length, count = 0;
 
+        List<Integer> start = new ArrayList<>();
+        start.add(-1);
+        map.put(0, start);
 
-        public static List<List<String>> findDuplicate(String[] paths) {
-            //content to path mapping
-            List<List<String>> res = new ArrayList<>();
-            HashMap<String, List<String>> map = new HashMap<>();
+        int[] prefix = new int[n];
 
-            for (String path: paths) {
-                String[] s = path.split(" ");
-                String root = s[0];
+        for (int i = 0 ; i < n; i ++) {
+            prefix[i] = i == 0? nums[i] : nums[i] + prefix[i-1];
 
-                for (int i = 1; i < s.length; i++) {
-                    String[] file = s[i].split("txt");
-                    String fileName = file[0] + "txt";
-                    String content = file[1];
-                    map.computeIfAbsent(content, k -> new ArrayList<>()).add(root + "/" + fileName);
-                }
+            System.out.println("i=" + i + ", prefix[i]=" +  prefix[i]);
+            if (map.containsKey(prefix[i] - k)) {
+                count += map.get(prefix[i] - k).size();
             }
-
-            for (List<String> list: map.values()) {
-                if (list.size() > 1) {
-                    res.add(list);
-                }
-            }
-
-            return res;
+            map.computeIfAbsent(prefix[i], key -> new ArrayList<>()).add(i);
         }
-
+        return count;
+    }
 }
