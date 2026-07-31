@@ -1,3 +1,4 @@
+DELAY : 2500
 Mouse : 1870 : 30 : Click : 0 : 0 : 0
 DELAY : 2492
 Mouse : 965 : 155 : LeftButtonDown : 0 : 0 : 0

@@ -11,12 +11,12 @@ public class MacroCombiner {
 
     private final FileContentHandler fileContentHandler = new FileContentHandler();
 
-    private static final String CLOSE = "close";
-    private static final String RESET = "reset";
-    private static final String LOADING = "load";
-    private static final String WINDOWED = "window";
-    private static final String AD = "ad";
-    private static final String OPEN = "opengame";
+    static final String CLOSE = "close";
+    static final String RESET = "reset";
+    static final String LOADING = "load";
+    static final String WINDOWED = "window";
+    static final String AD = "ad";
+    static final String OPEN = "opengame";
 
     private static final String MP1_D1 = "mp1/D1";
     private static final String MP1_D2 = "mp1/D2";
@@ -34,7 +34,7 @@ public class MacroCombiner {
 
     public static void main(String[] args) throws IOException {
         MacroCombiner macroCombiner = new MacroCombiner();
-        macroCombiner.carHunt();
+        macroCombiner.MP1();
     }
 
     public void SE() {
@@ -123,12 +123,16 @@ public class MacroCombiner {
     }
 
     public void MP1() {
+        String open = "MP1/opengame";
         List<String> macro = new ArrayList<>();
 
-        addMacro(macro, MP1_D1, 6);
-        addMacro(macro, OPEN, 1);
-        addMacro(macro, MP1_D2, 6);
-        addMacro(macro, OPEN, 1);
+        addMacro(macro, MP1_D1, 3);
+        addMacro(macro, open, 1);
+        addMacro(macro, MP1_D1, 3);
+        addMacro(macro, open, 1);
+        addMacro(macro, MP1_D2, 3);
+        addMacro(macro, open, 1);
+        addMacro(macro, MP1_D2, 3);
 
         writeMacro("MP1", macro);
     }
@@ -138,11 +142,10 @@ public class MacroCombiner {
 
         addMacro(macro, MP2_D1, 6);
         addMacro(macro, MP2_D2, 6);
-
         writeMacro("MP2", macro);
     }
 
-    private List<String> resets() {
+    List<String> resets() {
         List<String> macro = new ArrayList<>();
 
         addMacro(macro, CLOSE, 1);
@@ -154,11 +157,11 @@ public class MacroCombiner {
         return macro;
     }
 
-    private void addMacro(List<String> macro, String macroName, int times) {
+    void addMacro(List<String> macro, String macroName, int times) {
         macro.addAll(multiplySingleMacro(macroName, times));
     }
 
-    private void writeMacro(String fileName, List<String> macro) {
+    void writeMacro(String fileName, List<String> macro) {
         FilePrinter.overrideFile(
                 macro,
                 windows + fileName + MACRO_SUFFIX

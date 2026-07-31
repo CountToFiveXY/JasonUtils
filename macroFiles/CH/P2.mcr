@@ -11,18 +11,11 @@ Mouse : 1768 : 636 : LeftButtonDown : 0 : 0 : 0
 DELAY : 72
 Mouse : 1768 : 636 : LeftButtonUp : 0 : 0 : 0
 DELAY : 1107
-Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
-DELAY : 14
-Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
-DELAY : 9
-Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
+Mouse : 1768 : 636
 DELAY : 8
 Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
 DELAY : 8
-Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
-DELAY : 9
-Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
-DELAY : 18
+Mouse : 1768 :
 Mouse : 1768 : 636 : Wheel : -1 : 0 : 0
 DELAY : 23
 Mouse : 1768 : 636 : Wheel : -1 : 0 : 0

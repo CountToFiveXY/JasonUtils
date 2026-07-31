@@ -1,13 +1,29 @@
 DELAY : 1870
-Mouse : 706 : 956 : Click : 0 : 0 : 0
+Mouse : 1252 : 974 : Click : 0 : 0 : 0
 DELAY : 1094
-Mouse : 692 : 972 : Click : 0 : 0 : 0
-DELAY : 3488
-Mouse : 1645 : 981 : LeftButtonDown : 0 : 0 : 0
-DELAY : 75
-Mouse : 1645 : 981 : LeftButtonUp : 0 : 0 : 0
+Mouse : 1252 : 974 : Click : 0 : 0 : 0
+DELAY : 3500
+Mouse : 1645 : 981 : Click : 0 : 0 : 0
 DELAY : 3000
-Mouse : 1773 : 596 : Click : 0 : 0 : 0
-DELAY : 1500
-Mouse : 1773 : 596 : Click : 0 : 0 : 0
+Keyboard : Right : KeyDown
+DELAY : 87
+Keyboard : Right : KeyUp
+DELAY : 281
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 271
+Keyboard : Right : KeyDown
+DELAY : 72
+Keyboard : Right : KeyUp
+DELAY : 281
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 281
+Keyboard : Right : KeyDown
+DELAY : 80
+Keyboard : Right : KeyUp
+DELAY : 281
+Mouse : 1275 : 788 : Click : 0 : 0 : 0
 DELAY : 1500

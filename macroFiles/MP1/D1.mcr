@@ -1,19 +1,13 @@
 DELAY : 1617
-Mouse : 1250 : 938 : Click : 0 : 0 : 0
+Mouse : 1540 : 968 : Click : 0 : 0 : 0
 DELAY : 1617
-Mouse : 1250 : 938 : Click : 0 : 0 : 0
+Mouse : 1540 : 968 : Click : 0 : 0 : 0
 DELAY : 2764
-Mouse : 1680 : 929 : LeftButtonDown : 0 : 0 : 0
-DELAY : 49
-Mouse : 1680 : 929 : LeftButtonUp : 0 : 0 : 0
+Mouse : 1680 : 929 : Click : 0 : 0 : 0
 DELAY : 3754
-Mouse : 921 : 471 : LeftButtonDown : 0 : 0 : 0
-DELAY : 34
-Mouse : 921 : 471 : LeftButtonUp : 0 : 0 : 0
+Mouse : 921 : 471 : Click : 0 : 0 : 0
 DELAY : 2425
-Mouse : 1691 : 905 : LeftButtonDown : 0 : 0 : 0
-DELAY : 66
-Mouse : 1691 : 905 : LeftButtonUp : 0 : 0 : 0
+Mouse : 1691 : 905 : Click : 0 : 0 : 0
 DELAY : 22951
 Keyboard : Space : KeyDown
 DELAY : 71
@@ -203,23 +197,21 @@ Keyboard : Space : KeyDown
 DELAY : 64
 Keyboard : Space : KeyUp
 DELAY : 5093
-Mouse : 1625 : 937 : Click : 0 : 0 : 0
-DELAY : 3077
-Mouse : 1739 : 960 : Click : 0 : 0 : 0
-DELAY : 3732
-Mouse : 1739 : 960 : Click : 0 : 0 : 0
-DELAY : 4328
+Mouse : 1559 : 900 : Click : 0 : 0 : 0
+DELAY : 2698
+Mouse : 1564 : 903 : Click : 0 : 0 : 0
+DELAY : 3346
+Mouse : 1568 : 917 : Click : 0 : 0 : 0
+DELAY : 5000
+Mouse : 1717 : 715 : Click : 0 : 0 : 0
+DELAY : 2195
+Mouse : 1709 : 896 : Click : 0 : 0 : 0
+DELAY : 3861
+Mouse : 1709 : 901 : Click : 0 : 0 : 0
+DELAY : 2000
 Keyboard : Escape : KeyDown
-DELAY : 56
+DELAY : 71
 Keyboard : Escape : KeyUp
-DELAY : 3715
-Mouse : 1304 : 945 : Click : 0 : 0 : 0
-DELAY : 3715
-Mouse : 1734 : 950 : Click : 0 : 0 : 0
-DELAY : 5057
-Mouse : 1693 : 947 : Click : 0 : 0 : 0
-DELAY : 3404
-Mouse : 1654 : 481 : Click : 0 : 0 : 0
-DELAY : 3404
-Mouse : 1870 : 46 : Click : 0 : 0 : 0
-DELAY : 1445
+DELAY : 1511
+Mouse : 1892 : 19 : Click : 0 : 0 : 0
+DELAY : 1402
