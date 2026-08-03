@@ -11,10 +11,10 @@ public class SpecialHunt {
     static MacroCombiner combiner = new MacroCombiner();
 
     public static void main(String[] args) throws IOException {
-        carHunt();
+        combine();
     }
 
-    public static void carHunt() {
+    public static void combine() {
         String move = "SH/move";
         String run = "SH/1";
         String fuel = "SH/fuel";
