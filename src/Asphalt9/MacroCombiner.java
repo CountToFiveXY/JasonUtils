@@ -3,7 +3,6 @@ package Asphalt9;
 import FileHelper.FileContentHandler;
 import IO.FilePrinter;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,11 +17,6 @@ public class MacroCombiner {
     static final String AD = "ad";
     static final String OPEN = "opengame";
 
-    private static final String MP1_D1 = "mp1/D1";
-    private static final String MP1_D2 = "mp1/D2";
-    private static final String MP2_D1 = "mp2/D1";
-    private static final String MP2_D2 = "mp2/D2";
-
     private static final String MACRO_PATH = "macroFiles/";
     private static final String MACRO_SUFFIX = ".mcr";
 
@@ -30,119 +24,6 @@ public class MacroCombiner {
 
     public MacroCombiner() {
         writeMacro("reset", resets());
-    }
-
-    public static void main(String[] args) throws IOException {
-        MacroCombiner macroCombiner = new MacroCombiner();
-        macroCombiner.MP1();
-    }
-
-    public void SE() {
-        String start = "SE/SE3";
-        String move = "SE/SH/P1";
-        String run = "SE/SH/1";
-
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, start, 1);
-        addMacro(macro, move, 1);
-        addMacro(macro, run, 9);
-        addMacro(macro, AD, 7);
-        addMacro(macro, run, 9);
-        addMacro(macro, AD, 7);
-        addMacro(macro, run, 3);
-        addMacro(macro, AD, 2);
-        macro.addAll(resets());
-
-        writeMacro("SE", macro);
-    }
-
-    public void spotlight() {
-        String start = "SE/SE1";
-        String move = "SE/SP/move";
-        String run = "SE/SP/1";
-
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, start, 1);
-        addMacro(macro, move, 1);
-        addMacro(macro, run, 9);
-        addMacro(macro, AD, 7);
-        addMacro(macro, run, 9);
-        addMacro(macro, AD, 7);
-        addMacro(macro, run, 3);
-        addMacro(macro, AD, 2);
-        macro.addAll(resets());
-
-        writeMacro("SP", macro);
-    }
-
-    public void carHunt() {
-        String move = "CH/P1";
-        String run = "CH/1";
-
-        String select = "CH/select";
-        String fuel = "CH/fuelD";
-        String base = "CH/base";
-
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, move, 1);
-        addMacro(macro, run, 5);
-
-        addMacro(macro, select, 1);
-        addMacro(macro, fuel, 1);
-        addMacro(macro, base, 1);
-
-        addMacro(macro, move, 1);
-        addMacro(macro, AD, 9);
-        addMacro(macro, run, 5);
-
-        addMacro(macro, select, 1);
-        addMacro(macro, fuel, 1);
-        addMacro(macro, base, 1);
-
-        addMacro(macro, move, 1);
-        addMacro(macro, AD, 8);
-
-        macro.addAll(resets());
-
-        writeMacro("CarHunt", macro);
-    }
-
-    public void DS() {
-        String ds = "DS/1";
-        String dsAd = "DS/ad";
-
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, ds, 3);
-        addMacro(macro, dsAd, 6);
-
-        writeMacro("DriverS", macro);
-    }
-
-    public void MP1() {
-        String open = "MP1/opengame";
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, MP1_D1, 3);
-        addMacro(macro, open, 1);
-        addMacro(macro, MP1_D1, 3);
-        addMacro(macro, open, 1);
-        addMacro(macro, MP1_D2, 3);
-        addMacro(macro, open, 1);
-        addMacro(macro, MP1_D2, 3);
-
-        writeMacro("MP1", macro);
-    }
-
-    public void MP2() {
-        List<String> macro = new ArrayList<>();
-
-        addMacro(macro, MP2_D1, 6);
-        addMacro(macro, MP2_D2, 6);
-        writeMacro("MP2", macro);
     }
 
     List<String> resets() {
