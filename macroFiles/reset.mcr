@@ -1,9 +1,23 @@
 DELAY : 1500
-Keyboard : LWindows : KeyDown
-DELAY : 71
-Keyboard : LWindows : KeyUp
-DELAY : 1768
-Mouse : 881 : 403 : Click : 0 : 0 : 0
+Mouse : 710 : 1045 : LeftButtonDown : 0 : 0 : 0
+DELAY : 67
+Mouse : 710 : 1045 : LeftButtonUp : 0 : 0 : 0
+DELAY : 1447
+Keyboard : S : KeyDown
+DELAY : 72
+Keyboard : S : KeyUp
+DELAY : 152
+Keyboard : E : KeyDown
+DELAY : 72
+Keyboard : E : KeyUp
+DELAY : 199
+Keyboard : T : KeyDown
+DELAY : 73
+Keyboard : T : KeyUp
+DELAY : 1288
+Mouse : 782 : 269 : LeftButtonDown : 0 : 0 : 0
+DELAY : 58
+Mouse : 782 : 269 : LeftButtonUp : 0 : 0 : 0
 DELAY : 4000
 Mouse : 98 : 448 : Click : 0 : 0 : 0
 DELAY : 2500

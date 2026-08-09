@@ -8,6 +8,11 @@ import java.util.List;
 
 public class SpecialHunt {
 
+    private static final String MOVE = "SH/move";
+    private static final String RUN = "SH/1";
+    private static final String SELECT = "SH/select";
+    private static final String FUEL = "SH/fuel";
+
     static MacroCombiner combiner = new MacroCombiner();
 
     public static void main(String[] args) throws IOException {
@@ -15,19 +20,23 @@ public class SpecialHunt {
     }
 
     public static void combine() {
-        String move = "SH/move";
-        String run = "SH/1";
-        String fuel = "SH/fuel";
 
         List<String> macro = new ArrayList<>();
 
-        combiner.addMacro(macro, move, 1);
-        combiner.addMacro(macro, run, 4);
-        combiner.addMacro(macro, fuel, 1);
-        combiner.addMacro(macro, MacroCombiner.AD, 7);
-        combiner.addMacro(macro, run, 4);
-        combiner.addMacro(macro, fuel, 1);
-        combiner.addMacro(macro, MacroCombiner.AD, 7);
+        combiner.addMacro(macro, MOVE, 1);
+        combiner.addMacro(macro, RUN, 3);
+        combiner.addMacro(macro, FUEL, 1);
+
+        combiner.addMacro(macro, MacroCombiner.BASE, 1);
+        combiner.addMacro(macro, MOVE, 1);
+        combiner.addMacro(macro, MacroCombiner.AD, 8);
+
+        combiner.addMacro(macro, RUN, 3);
+        combiner.addMacro(macro, FUEL, 1);
+
+        combiner.addMacro(macro, MacroCombiner.BASE, 1);
+        combiner.addMacro(macro, MOVE, 1);
+        combiner.addMacro(macro, MacroCombiner.AD, 8);
 
         macro.addAll(combiner.resets());
 
