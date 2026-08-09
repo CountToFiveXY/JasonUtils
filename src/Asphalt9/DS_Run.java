@@ -1,25 +1,24 @@
 package Asphalt9;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class DS_Run {
+public class DS_Run extends MacroRun {
 
     private static final String DS = "DS/1";
     private static final String DS_AD = "DS/ad";
 
-    private static final MacroCombiner combiner = new MacroCombiner();
-
     public static void main(String[] args) {
-        combine();
+        new DS_Run().combine();
     }
 
-    public static void combine() {
-        List<String> macro = new ArrayList<>();
-
+    @Override
+    protected void buildMacro(List<String> macro) {
         combiner.addMacro(macro, DS, 3);
         combiner.addMacro(macro, DS_AD, 6);
+    }
 
-        combiner.writeMacro("DriverS", macro);
+    @Override
+    protected String outputName() {
+        return "DriverS";
     }
 }

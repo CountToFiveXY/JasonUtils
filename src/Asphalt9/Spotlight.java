@@ -1,23 +1,19 @@
 package Asphalt9;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Spotlight {
+public class Spotlight extends MacroRun {
 
     private static final String START = "SE/SE1";
     private static final String MOVE = "SE/SP/move";
     private static final String RUN = "SE/SP/1";
 
-    private static final MacroCombiner combiner = new MacroCombiner();
-
     public static void main(String[] args) {
-        combine();
+        new Spotlight().combine();
     }
 
-    public static void combine() {
-        List<String> macro = new ArrayList<>();
-
+    @Override
+    protected void buildMacro(List<String> macro) {
         combiner.addMacro(macro, START, 1);
         combiner.addMacro(macro, MOVE, 1);
         combiner.addMacro(macro, RUN, 9);
@@ -26,8 +22,12 @@ public class Spotlight {
         combiner.addMacro(macro, MacroCombiner.AD, 7);
         combiner.addMacro(macro, RUN, 3);
         combiner.addMacro(macro, MacroCombiner.AD, 2);
-        macro.addAll(combiner.resets());
 
-        combiner.writeMacro("SP", macro);
+        macro.addAll(combiner.resets());
+    }
+
+    @Override
+    protected String outputName() {
+        return "SP";
     }
 }

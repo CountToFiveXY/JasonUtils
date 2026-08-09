@@ -4,7 +4,6 @@ import FileHelper.FileContentHandler;
 import IO.FilePrinter;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,20 +18,22 @@ public class MacroCombiner {
     static final String AD = "ad";
     static final String BASE = "base";
     static final String OPEN = "opengame";
-    static final Map<String, Integer> classFuels = new HashMap<>();
+    static final Map<String, Integer> classFuels = Map.of(
+            "D4", 2,
+            "D5", 3,
+            "C4", 5,
+            "C5", 6,
+            "B5", 7,
+            "B6", 8
+    );
 
     private static final String MACRO_PATH = "macroFiles/";
     private static final String MACRO_SUFFIX = ".mcr";
 
     private static final String windows = "/Users/ybao0/OneDrive/Desktop/Macro/";
 
-    public MacroCombiner() {
+    void reset() {
         writeMacro("reset", resets());
-        classFuels.put("D4", 2);
-        classFuels.put("C4", 5);
-        classFuels.put("C5", 6);
-        classFuels.put("B5", 7);
-        classFuels.put("B6", 8);
     }
 
     List<String> resets() {
