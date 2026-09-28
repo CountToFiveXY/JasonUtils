@@ -11,20 +11,21 @@ public class MacroCombiner {
 
     private final FileContentHandler fileContentHandler = new FileContentHandler();
 
-    static final String CLOSE = "close";
     static final String RESET = "reset";
-    static final String LOADING = "load";
+    static final String PRESET = "preset";
     static final String WINDOWED = "window";
     static final String AD = "ad";
     static final String BASE = "base";
-    static final String OPEN = "opengame";
+    static final String NEWS = "news";
     static final Map<String, Integer> classFuels = Map.of(
             "D4", 2,
             "D5", 3,
             "C4", 5,
             "C5", 6,
             "B5", 7,
-            "B6", 8
+            "B6", 8,
+            "A5", 11,
+            "A6", 12
     );
 
     private static final String MACRO_PATH = "macroFiles/";
@@ -38,11 +39,9 @@ public class MacroCombiner {
 
     List<String> resets() {
         List<String> macro = new ArrayList<>();
-
-        addMacro(macro, CLOSE, 1);
         addMacro(macro, RESET, 1);
-        addMacro(macro, OPEN, 1);
-        addMacro(macro, LOADING, 1);
+        addMacro(macro, NEWS, 1);
+        addMacro(macro, PRESET, 1);
         addMacro(macro, WINDOWED, 1);
 
         return macro;

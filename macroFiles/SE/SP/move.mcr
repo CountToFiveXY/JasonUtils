@@ -49,5 +49,5 @@ Mouse : 1438 : 509 : Wheel : -1 : 0 : 0
 DELAY : 25
 Mouse : 1438 : 509 : Wheel : -1 : 0 : 0
 DELAY : 1000
-Mouse : 1110 : 514 : Click : 0 : 0 : 0
+Mouse : 524 : 568 : Click : 0 : 0 : 0
 DELAY : 1000

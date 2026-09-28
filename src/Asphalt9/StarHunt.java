@@ -2,7 +2,7 @@ package Asphalt9;
 
 import java.util.List;
 
-public class SpecialHunt extends MacroRun {
+public class StarHunt extends MacroRun {
 
     private static final String MOVE = "SH/move";
     private static final String RUN = "SH/1";
@@ -10,7 +10,7 @@ public class SpecialHunt extends MacroRun {
     private static final String FUEL = "SH/fuel";
 
     public static void main(String[] args) {
-        new SpecialHunt().combine();
+        new StarHunt().combine();
     }
 
     @Override
@@ -35,6 +35,6 @@ public class SpecialHunt extends MacroRun {
 
     @Override
     protected String outputName() {
-        return "SpecialHunt";
+        return "StarHunt";
     }
 }

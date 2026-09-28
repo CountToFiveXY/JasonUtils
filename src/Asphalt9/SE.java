@@ -4,8 +4,8 @@ import java.util.List;
 
 public class SE extends MacroRun {
 
-    private static final String START = "SE/SE3";
-    private static final String MOVE = "SE/SH/P1";
+    private static final String START = "SE/SE4";
+    private static final String MOVE = "SE/SH/P2";
     private static final String RUN = "SE/SH/1";
 
     public static void main(String[] args) {

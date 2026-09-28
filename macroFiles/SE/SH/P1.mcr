@@ -1,2 +1,2 @@
-Mouse : 1713 : 620 : Click : 0 : 0 : 0
+Mouse : 1618 : 541 : Click : 0 : 0 : 0
 DELAY : 2000
