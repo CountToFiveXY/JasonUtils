@@ -34,4 +34,4 @@ DELAY : 79
 Keyboard : ShiftLeft : KeyUp
 DELAY : 2214
 Mouse : 746 : 336 : Click : 0 : 0 : 0
-DELAY : 20000
+DELAY : 65000

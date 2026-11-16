@@ -33,14 +33,10 @@ public class Spotlight extends MacroRun {
 
         combiner.addMacro(macro, RUN, 4);
 
+        combiner.addMacro(macro, MacroCombiner.AD, 4);
+
         combiner.addMacro(macro, SELECT, 1);
         combiner.addMacro(macro, FUEL, MacroCombiner.classFuels.get(carClass));
-
-        combiner.addMacro(macro, MacroCombiner.BASE, 1);
-        combiner.addMacro(macro, START, 1);
-        combiner.addMacro(macro, MOVE, 1);
-
-        combiner.addMacro(macro, MacroCombiner.AD, 6);
 
         macro.addAll(combiner.resets());
     }

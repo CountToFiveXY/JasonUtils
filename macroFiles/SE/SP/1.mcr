@@ -3,13 +3,9 @@ Mouse : 1731 : 975 : LeftButtonDown : 0 : 0 : 0
 DELAY : 53
 Mouse : 1731 : 975 : LeftButtonUp : 0 : 0 : 0
 DELAY : 2138
-Mouse : 1068 : 484 : LeftButtonDown : 0 : 0 : 0
-DELAY : 59
-Mouse : 1068 : 484 : LeftButtonUp : 0 : 0 : 0
+Mouse : 437 : 508 : Click : 0 : 0 : 0
 DELAY : 2375
-Mouse : 1713 : 949 : LeftButtonDown : 0 : 0 : 0
-DELAY : 48
-Mouse : 1713 : 949 : LeftButtonUp : 0 : 0 : 0
+Mouse : 1717 : 937 : Click : 0 : 0 : 0
 DELAY : 1964
 Mouse : 1538 : 954 : LeftButtonDown : 0 : 0 : 0
 DELAY : 61

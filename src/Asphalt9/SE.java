@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SE extends MacroRun {
 
-    private static final String START = "SE/SE4";
+    private static final String START = "SE/SE5";
     private static final String MOVE = "SE/SH/P2";
     private static final String RUN = "SE/SH/1";
 
@@ -20,8 +20,8 @@ public class SE extends MacroRun {
         combiner.addMacro(macro, MacroCombiner.AD, 7);
         combiner.addMacro(macro, RUN, 9);
         combiner.addMacro(macro, MacroCombiner.AD, 7);
-        combiner.addMacro(macro, RUN, 3);
-        combiner.addMacro(macro, MacroCombiner.AD, 2);
+        combiner.addMacro(macro, RUN, 6);
+        combiner.addMacro(macro, MacroCombiner.AD, 4);
         //reset in the end
         macro.addAll(combiner.resets());
     }
